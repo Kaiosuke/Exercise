@@ -1,0 +1,123 @@
+/***************HEADER************** */
+
+.container--header {
+  max-width: 138rem;
+  margin: 4.8rem auto;
+  padding: 0 4rem;
+}
+
+.container--header .wrapper--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container--header .wrapper--header .wrapper--logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container--header .wrapper--header .wrapper--links {
+  padding-left: 6.4rem;
+  flex: 0 0 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper--header .header--links ul {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: rgb(33, 37, 41);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.wrapper--header .header--links ul li {
+  transition: all var(--animated-fast);
+}
+
+.wrapper--header .header--links ul li:first-child {
+  color: var(--color-primary);
+}
+
+.wrapper--header .header--links ul li:hover {
+  color: var(--color-primary);
+}
+
+.wrapper--header .header--search {
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  border-radius: 1rem;
+  padding: 0.8rem 1.6rem;
+  width: 28rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper--header .header--search .search--logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wrapper--header .header--search .search--logo span {
+  color: #8b8b8b;
+}
+
+.wrapper--header .header--search .search--logo input {
+  border: none;
+}
+
+.wrapper--header .header--search .search--logo input::placeholder {
+  color: #000;
+  font-weight: 500;
+}
+
+.wrapper--header .header--search .cart {
+  position: relative;
+}
+
+.wrapper--header .header--search .cart .cart--logo {
+  font-size: 2.2rem;
+  position: relative;
+  padding-left: 1.4rem;
+  border-left: 1px solid #ddd;
+}
+
+.wrapper--header .header--search .cart span {
+  position: absolute;
+  top: -2.4rem;
+  right: -2rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: var(--color-primary) -4px 9px 25px -6px;
+}
+
+.bar--links label {
+  font-size: 2.8rem;
+  line-height: 2rem;
+  padding: 0 1rem;
+  border: 1px solid #ddd;
+  color: #8b8b8b;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+section h2 {
+  margin-top: -10rem;
+}

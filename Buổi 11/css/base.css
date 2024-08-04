@@ -1,0 +1,46 @@
+@import url(./components.css);
+@import url(./utilities.css);
+@import url(./section.css);
+@import url(./responsive.css);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+  --color-primary: #f96062;
+  --animated-fast: 0.2s;
+  --animated-normal: 0.4s;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a button {
+  cursor: pointer;
+}
+
+button,
+input {
+  font-family: "Poppins", sans-serif;
+}
