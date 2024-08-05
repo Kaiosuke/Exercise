@@ -388,9 +388,55 @@
 /**********PC********** */
 
 @media (max-width: 1380px) {
-  /*****Header/***** */
+  /*****Service section/***** */
 
-  /*****Hero section/***** */
+  .service--section .container .wrapper--service h5 {
+    font-size: 1.6rem;
+  }
+
+  /*****Discovery section/***** */
+
+  .discovery--section .wrapper--discovery .discovery--content h5 {
+    font-weight: 500;
+  }
+
+  .discovery--section .wrapper--discovery .discovery--content h2 {
+    font-size: 3.2rem;
+  }
+
+  .discovery--section .wrapper--discovery .discovery--content p {
+    font-size: 1.6rem;
+  }
+
+  /*****Delivery section/***** */
+
+  .delivery--section .wrapper--delivery .delivery--content h5 {
+    font-weight: 500;
+  }
+
+  .delivery--section .wrapper--delivery .delivery--content h2 {
+    font-size: 3.2rem;
+  }
+
+  .delivery--section .wrapper--delivery .delivery--content p {
+    font-size: 1.6rem;
+  }
+
+  /*****Order section/***** */
+
+  .order--section .container .wrapper--order .order--content .btn--order {
+    gap: 2.6rem;
+  }
+
+  .order--section .container .wrapper--order .order--content .btn--order a div {
+    font-size: 1.6rem;
+  }
+
+  /*****Footer/***** */
+
+  .container--footer .wrapper--footer .footer--logo p {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -403,8 +449,21 @@
     font-size: 4.8rem;
     line-height: 5.8rem;
   }
+}
 
-  /*****Hero section/***** */
+@media (max-width: 1200px) {
+  /*****Order section/***** */
+
+  .order--section .container .wrapper--order .order--content .btn--order {
+    gap: 0.6rem;
+  }
+
+  /*****Footer/***** */
+
+  .container--footer ul li,
+  .container--footer .wrapper--footer .footer--touch p {
+    font-size: 1.4rem;
+  }
 }
 
 /**********Tablet********** */
@@ -474,16 +533,78 @@
     justify-content: center;
   }
 
-  /*****Service section/***** */
+  /*****Discovery section/***** */
+  .discovery--section .wrapper--discovery {
+    gap: 6rem;
+  }
+
+  .discovery--section .wrapper--discovery .discovery--content {
+    padding-right: 0;
+  }
+
+  /*****Delivery section/***** */
+  .delivery--section .wrapper--delivery {
+    gap: 6rem;
+  }
+
+  .delivery--section .wrapper--delivery {
+    flex-direction: column-reverse;
+  }
+
+  .delivery--section .wrapper--delivery .delivery--content {
+    padding-right: 0;
+  }
+
+  /*****Order section/***** */
+  .order--section .container .wrapper--order {
+    gap: 6rem;
+  }
+
+  .order--section .container .wrapper--order .order--content {
+    padding-right: 0;
+  }
+
+  .order--section .container .wrapper--order .order--content .btn--order {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .order--section
+    .container
+    .wrapper--order
+    .order--content
+    .btn--order
+    a
+    button {
+    padding: 1.2rem 2.6rem;
+    width: fit-content;
+  }
+
+  /*****Footer/***** */
+
+  .container--footer .wrapper--footer {
+    text-align: center;
+  }
+
+  .container--footer .wrapper--footer .footer--company,
+  .container--footer .wrapper--footer .footer--services,
+  .container--footer .wrapper--footer .footer--touch {
+    margin-top: 4rem;
+  }
 }
 
 /**********Mobile********** */
 
 @media (max-width: 794px) {
+  .container {
+    padding: 0 2rem;
+  }
+
   /*****Header/***** */
   .hero--section {
     text-align: center;
   }
+
   /*****Hero section/***** */
   .hero--section .wrapper--hero .wrapper--btn-hero {
     justify-content: center;
@@ -499,5 +620,42 @@
     .service--list
     .wrapper--service-list:not(:first-child) {
     margin-top: 2rem;
+  }
+
+  /*****Discovery section/***** */
+  .discovery--section .wrapper--discovery .discovery--content {
+    text-align: center;
+  }
+
+  .discovery--section .wrapper--discovery .discovery--content .btn--discovery {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*****Delivery section/***** */
+
+  .delivery--section .wrapper--delivery .delivery--content {
+    text-align: center;
+  }
+
+  .delivery--section .wrapper--delivery .delivery--content .btn--delivery {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*****Order section/***** */
+
+  .order--section .wrapper--order .order--content {
+    text-align: center;
+  }
+
+  .order--section .container .wrapper--order .order--content .btn--order {
+    justify-content: center;
+  }
+
+  /*****Footer/***** */
+
+  .container--footer .footer--copyright {
+    flex-direction: column;
   }
 }
