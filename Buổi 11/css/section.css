@@ -196,7 +196,10 @@
 }
 
 .service--section .container .wrapper--service h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
+  line-height: 5.4rem;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .service--section .container .wrapper--service .service--list {
