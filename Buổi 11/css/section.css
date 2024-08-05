@@ -74,6 +74,15 @@
 .wrapper--header .header--search .search--logo input::placeholder {
   color: #000;
   font-weight: 500;
+  opacity: 1;
+  visibility: visible;
+  transition: all var(--animated-fast) ease;
+}
+
+.wrapper--header .header--search .search--logo input:active::placeholder,
+.wrapper--header .header--search .search--logo input:focus::placeholder {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .wrapper--header .header--search .cart {
