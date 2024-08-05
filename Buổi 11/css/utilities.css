@@ -1,5 +1,30 @@
 .container {
-  max-width: 130rem;
+  max-width: 138rem;
   margin: 3.2rem auto;
-  padding: 0;
+  padding: 0 6rem;
+}
+
+.mt-t {
+  margin-top: 8rem;
+}
+
+.btn {
+  padding: 2.5rem 3.2rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  border: 1px solid var(--color-primary);
+  background: rgb(249, 96, 98, 0.1);
+  color: #f96062;
 }

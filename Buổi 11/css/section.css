@@ -3,7 +3,7 @@
 .container--header {
   max-width: 138rem;
   margin: 4.8rem auto;
-  padding: 0 4rem;
+  padding: 0 6rem;
 }
 
 .container--header .wrapper--header {
@@ -108,6 +108,10 @@
   box-shadow: var(--color-primary) -4px 9px 25px -6px;
 }
 
+.bar--links {
+  display: none;
+}
+
 .bar--links label {
   font-size: 2.8rem;
   line-height: 2rem;
@@ -118,6 +122,187 @@
   cursor: pointer;
 }
 
-section h2 {
-  margin-top: -10rem;
+/***************HERO SECTION************** */
+
+.hero--section .hero--tittle span {
+  padding: 1.2rem 2rem;
+  background: rgba(249, 96, 99, 0.2);
+  border-radius: 99rem;
+  color: var(--color-primary);
+}
+
+.hero--section .wrapper--hero .hero--content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  margin-top: 4.6rem;
+  justify-content: flex-start;
+}
+
+.hero--section .wrapper--hero .hero--content h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 8.8rem;
+  color: rgb(46, 46, 46);
+  font-size: 7.4rem;
+}
+
+.hero--section .wrapper--hero .hero--content h1 span {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.hero--section .wrapper--hero .hero--content p {
+  color: rgb(103, 103, 103);
+  font-weight: 500;
+}
+
+.hero--section .wrapper--hero .wrapper--btn-hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero--section .wrapper--hero .wrapper--btn-hero .btn--hero {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: rgb(103, 103, 103);
+  font-weight: 500;
+}
+
+.hero--section .wrapper--hero .wrapper--btn-hero .btn--hero img {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 50%;
+}
+
+.hero--section .wrapper--hero .hero--image img {
+  width: 100%;
+}
+
+/***************SERVICE SECTION************** */
+
+.service--section {
+  background: #fef5f5;
+  padding: 8rem 0;
+}
+
+.service--section .container .wrapper--service {
+  text-align: center;
+}
+.service--section .container .wrapper--service > .row {
+  justify-content: center;
+}
+
+.service--section .container .wrapper--service h5 {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+}
+
+.service--section .container .wrapper--service h2 {
+  font-size: 3.2rem;
+}
+
+.service--section .container .wrapper--service .service--list {
+  margin-top: 6rem;
+}
+
+.service--section
+  .container
+  .wrapper--service
+  .service--list
+  .wrapper--service-list {
+  position: relative;
+  z-index: 2;
+}
+
+.service--section
+  .container
+  .wrapper--service
+  .service--list
+  .wrapper--service-list::after {
+  content: "";
+  top: 0;
+  left: 40px;
+  width: calc(100% - 48px);
+  height: 106%;
+  border-radius: 1.2rem;
+  position: absolute;
+  background: var(--color-primary);
+  z-index: 1;
+  opacity: 0;
+  transition: all var(--animated-fast) ease;
+}
+
+.service--section
+  .container
+  .wrapper--service
+  .service--list
+  .wrapper--service-list:hover::after {
+  rotate: -4deg;
+  top: -3px;
+  left: 48px;
+  opacity: 1;
+}
+
+.service--section
+  .container
+  .wrapper--service
+  .service--list
+  .wrapper--service-list
+  .wrapper--service-content {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  height: 100%;
+  padding: 4rem 2.4rem;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+  margin: 0 2rem;
+}
+
+.service--section
+  .container
+  .wrapper--service
+  .service--list
+  .wrapper--service-list
+  .service--icon {
+  margin-bottom: 4rem;
+}
+
+.service--section
+  .container
+  .wrapper--service
+  .service--list
+  .wrapper--service-list
+  .service--icon
+  img {
+  width: auto;
+  height: 6rem;
+}
+
+.service--section
+  .container
+  .wrapper--service
+  .service--list
+  .wrapper--service-list
+  h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.service--section
+  .container
+  .wrapper--service
+  .service--list
+  .wrapper--service-list
+  p {
+  color: rgb(103, 103, 103);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 2.6rem;
 }

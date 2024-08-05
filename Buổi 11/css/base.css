@@ -8,6 +8,7 @@
   --color-primary: #f96062;
   --animated-fast: 0.2s;
   --animated-normal: 0.4s;
+  --custom-gutter: 1rem;
 }
 
 * {
