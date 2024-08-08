@@ -1,0 +1,49 @@
+@import url(./components.css);
+@import url(./utilities.css);
+@import url(./section.css);
+@import url(./responsive.css);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+  --color-primary: #5753e4;
+  --color-secondary: #1bc5d4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Rajdhani", sans-serif;
+  background: #fff;
+}
+
+h1 {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  font-family: "Rajdhani", sans-serif;
+}

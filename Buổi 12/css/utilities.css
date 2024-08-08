@@ -1,0 +1,49 @@
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper--input {
+  position: relative;
+}
+
+.wrapper--input input {
+  width: 100%;
+  padding: 1.8rem 1.6rem;
+  border: 1px solid #ddd;
+  border-radius: 1.4rem;
+  font-weight: 700;
+  color: rgb(62, 63, 94);
+  font-size: 1.6rem;
+  position: relative;
+  z-index: 99;
+  background: transparent;
+}
+
+.wrapper--input input:focus,
+.wrapper--input input:active {
+  border: 1px solid var(--color-primary);
+}
+
+.wrapper--input label {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(62, 63, 94, 0.6);
+  font-weight: 700;
+  padding: 0.4rem;
+  background-color: #fff;
+  font-size: 1.6rem;
+  transition: all 0.4s ease;
+  z-index: 9;
+}
+
+.wrapper--input input:focus ~ label,
+.wrapper--input input:active ~ label,
+.wrapper--input input:not(:placeholder-shown) ~ label {
+  font-size: 1.2rem;
+  top: 0;
+  z-index: 999;
+}

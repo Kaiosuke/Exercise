@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+  </head>
+  <body>
+    <!-- section landing -->
+    <section class="section--landing">
+      <!-- container -->
+      <div class="container row">
+        <!-- open login -->
+        <input type="radio" name="open" id="open-login" checked hidden />
+        <!-- end login -->
+        <!-- open register -->
+        <input type="radio" name="open" id="open-register" hidden />
+        <!-- end register -->
+        <!-- landing left -->
+        <div class="landing--left">
+          <!-- logo -->
+          <div class="logo">
+            <img
+              src="./images/viking-and-skull-logo-DC48D47CC2-seeklogo.com.png"
+              alt="logo"
+            />
+          </div>
+          <!-- end logo -->
+          <h2>Welcome to</h2>
+          <h1>Vikinger</h1>
+          <p>
+            The next generation social network & community! Connect with your
+            friends and play with our quests and badges gamification system!
+          </p>
+          <!-- btn switch -->
+          <div class="btn--switch">
+            <!-- switch login -->
+            <label for="open-login" class="switch--login"> Login </label>
+            <!-- end switch Login -->
+            <!-- switch register -->
+            <label for="open-register" class="switch--register">
+              Register
+            </label>
+            <!-- end switch register -->
+          </div>
+          <!-- end btn switch -->
+        </div>
+        <!-- end landing left -->
+        <!-- landing right -->
+        <div class="landing--right">
+          <h2></h2>
+        </div>
+        <!-- end landing right -->
+        <!-- wrapper form -->
+        <div class="wrapper--form">
+          <!-- form login -->
+          <form action="#!" class="form--login">
+            <!-- icon rocket -->
+            <div class="icon--rocket">
+              <img src="./images/rocket.webp" alt="rocket" />
+            </div>
+            <div class="icon--rocket">
+              <img src="./images/rocket.webp" alt="rocket" />
+            </div>
+            <!-- end icon rocket -->
+
+            <h2>Account Login</h2>
+            <!-- wrapper login -->
+            <div class="wrapper--login">
+              <!-- wrapper input -->
+              <div class="wrapper--input">
+                <input type="text" name="name" id="name" placeholder="" />
+                <label for="name">Username or email</label>
+              </div>
+              <!-- end wrapper input -->
+              <!-- wrapper input -->
+              <div class="wrapper--input">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder=""
+                />
+                <label for="password">Password</label>
+              </div>
+              <!-- wrapper input -->
+              <!-- login option -->
+              <div class="login--option">
+                <!-- remember option -->
+                <div class="remember--option">
+                  <input type="checkbox" id="remember-me" checked hidden />
+                  <span><i class="fa-solid fa-xmark"></i></span>
+                  <label for="remember-me">Remember me</label>
+                </div>
+                <!-- end remember option -->
+                <!-- forgot option -->
+                <div class="forgot--option">
+                  <a href="#!"> Forgot password?</a>
+                </div>
+                <!-- end forgot option -->
+              </div>
+              <!-- end login option -->
+            </div>
+            <!-- end wrapper login -->
+            <!-- btn login -->
+            <div class="btn--login">
+              <button>Login to your account</button>
+            </div>
+            <!-- end btn login -->
+            <p>Login with your Social Account</p>
+            <!-- links social -->
+            <nav class="links--social">
+              <ul>
+                <li>
+                  <a href="#!"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#!"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#!"> <i class="fa-brands fa-twitch"></i> </a>
+                </li>
+                <li>
+                  <a href="#!"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- end links social -->
+          </form>
+          <!-- end form login -->
+          <form action="#!" class="form--register">
+            <div class="icon--rocket">
+              <img src="./images/rocket.webp" alt="rocket" />
+            </div>
+            <h2>Create your Account!</h2>
+            <!-- wrapper register -->
+            <div class="wrapper--register">
+              <!-- wrapper input -->
+              <div class="wrapper--input">
+                <input
+                  type="email"
+                  name="email"
+                  id="userEmail"
+                  placeholder=""
+                />
+                <label for="userEmail">Your email</label>
+              </div>
+              <!-- end wrapper input -->
+              <div class="wrapper--input">
+                <input type="text" name="name" id="userName" placeholder="" />
+                <label for="userName">Username</label>
+              </div>
+              <div class="wrapper--input">
+                <input
+                  type="password"
+                  name="password"
+                  id="userPassword"
+                  placeholder=""
+                />
+                <label for="userPassword">Password</label>
+              </div>
+              <div class="wrapper--input">
+                <input
+                  type="password"
+                  name="repeatPassword"
+                  id="repeatPassword"
+                  placeholder=""
+                />
+                <label for="repeatPassword">Repeat Password</label>
+              </div>
+            </div>
+            <!-- end wrapper register -->
+            <!-- register letter -->
+            <div class="register--letter">
+              <input type="checkbox" id="letter" checked hidden />
+              <span><i class="fa-solid fa-xmark"></i></span>
+              <label for="letter">Send me news and updates via email</label>
+            </div>
+            <!-- end register letter -->
+            <!-- btn register -->
+            <div class="btn--register">
+              <button href="#!">Register now!</button>
+            </div>
+            <!-- end btn register -->
+            <!-- register contact -->
+            <div class="register--contact">
+              <p>
+                You'll receive a confirmation email in your inbox with a link to
+                activate your account. If you have any problems,
+                <a href="#!"> contact us</a> !
+              </p>
+            </div>
+            <!-- end register contact -->
+          </form>
+        </div>
+        <!-- end wrapper form -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end section landing -->
+  </body>
+</html>

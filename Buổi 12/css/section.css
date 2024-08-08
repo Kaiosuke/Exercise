@@ -1,0 +1,633 @@
+.section--landing {
+  width: 100%;
+  height: 100%;
+  background: url(../images/landing-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.section--landing .container .landing--left {
+  width: 60rem;
+  position: absolute;
+  top: 16.2%;
+  left: 12.4%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section--landing .container .landing--left .logo img {
+  width: 5.2rem;
+}
+
+.section--landing .container .landing--left h2 {
+  margin-top: 2.8rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.section--landing .container .landing--left h1 {
+  font-size: 10.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: -4rem;
+}
+
+.section--landing .container .landing--left p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0 10rem;
+  margin-top: 1.8rem;
+}
+
+.section--landing .container .landing--left .btn--switch {
+  margin-top: 8.8rem;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+.section--landing .container .landing--left .btn--switch .switch--login,
+.section--landing .container .landing--left .btn--switch .switch--register {
+  padding: 1.6rem 3.2rem;
+  color: #fff;
+  width: 100%;
+  transition: all 0.4s ease;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.section--landing .container .landing--left .btn--switch .switch--login {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.section--landing .container .landing--left .btn--switch .switch--register {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.section--landing
+  .container
+  #open-login:checked
+  ~ .landing--left
+  .btn--switch
+  .switch--login {
+  background: #fff;
+  color: 1px solid #fff;
+  color: #000;
+  cursor: text;
+}
+
+.section--landing
+  .container
+  #open-register:checked
+  ~ .landing--left
+  .btn--switch
+  .switch--register {
+  background: #fff;
+  color: 1px solid #fff;
+  color: #000;
+  cursor: text;
+}
+
+.section--landing .container .landing--right {
+  background: url("../images/dot-texture.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  width: 60%;
+  height: 140%;
+  top: -20%;
+  right: -30%;
+}
+
+/* Form login */
+
+.section--landing .container .wrapper--form .form--login {
+  position: absolute;
+  top: 5.2rem;
+  right: 20rem;
+  background: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48.6rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 5.2rem 6.2rem;
+  opacity: 1;
+  visibility: visible;
+  transition: all 1s ease;
+}
+
+.section--landing .container .wrapper--form .form--login .icon--rocket {
+  position: absolute;
+  top: -6rem;
+  left: -6rem;
+}
+
+.section--landing .container .wrapper--form .form--login h2 {
+  font-size: 2.6rem;
+  color: rgb(62, 63, 94);
+}
+
+.section--landing .container .wrapper--form .form--login .wrapper--login {
+  margin-top: 6.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  width: 100%;
+  position: relative;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .wrapper--login
+  .login--option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .wrapper--login
+  .login--option
+  .remember--option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .wrapper--login
+  .login--option
+  .remember--option
+  span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  background: transparent;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  transition: all 0.4s ease;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .wrapper--login
+  .login--option
+  .remember--option
+  input:checked
+  ~ span {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .wrapper--login
+  .login--option
+  .remember--option
+  label {
+  cursor: pointer;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .wrapper--login
+  .login--option
+  .forgot--option
+  a {
+  color: rgba(62, 63, 94, 0.6);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .wrapper--login
+  .login--option
+  .forgot--option
+  a:hover {
+  color: var(--color-secondary);
+}
+
+.section--landing .container .wrapper--form .form--login .btn--login {
+  width: 100%;
+  margin-top: 3.2rem;
+  text-align: center;
+}
+
+.section--landing .container .wrapper--form .form--login .btn--login button {
+  display: inline-block;
+  width: 100%;
+  background: var(--color-primary);
+  padding: 1.5rem 0;
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  box-shadow: var(--color-primary) 0px 2px 10px 0px;
+  transition: 0.4s ease;
+  transition-property: background;
+  border: 2px solid transparent;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .btn--login
+  button:focus {
+  border: 2px solid #000;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .btn--login
+  button:hover {
+  background: #3b35dcf7;
+}
+
+.section--landing .container .wrapper--form .form--login p {
+  margin: 4rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgb(62, 63, 94);
+  position: relative;
+}
+
+.section--landing .container .wrapper--form .form--login p::before {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+}
+
+.section--landing .container .wrapper--form .form--login p::after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  top: 50%;
+  right: -50%;
+}
+
+.section--landing .container .wrapper--form .form--login .links--social ul {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .links--social
+  ul
+  li
+  a {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  transform: translateY(0rem);
+  transition: all 0.4s ease;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .links--social
+  ul
+  li:first-child
+  a {
+  background: #3763d2;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .links--social
+  ul
+  li:first-child
+  a
+  i {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .links--social
+  ul
+  li:nth-child(2)
+  a {
+  background: #1abcff;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .links--social
+  ul
+  li:nth-child(2)
+  a
+  i {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .links--social
+  ul
+  li:nth-child(3)
+  a {
+  background: #7b5dfa;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .links--social
+  ul
+  li:nth-child(3)
+  a
+  i {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .links--social
+  ul
+  li:last-child
+  a {
+  background: #fd434f;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .links--social
+  ul
+  li:last-child
+  a
+  i {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--login
+  .links--social
+  ul
+  li
+  a:hover {
+  transform: translateY(-0.6rem);
+}
+
+/* Form register */
+
+.section--landing .container .wrapper--form .form--register {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -10em;
+  background: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48.6rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 5.2rem 6.2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease;
+}
+
+.section--landing .container .wrapper--form .form--register .icon--rocket {
+  position: absolute;
+  top: -2rem;
+  left: -8rem;
+}
+
+.section--landing .container .wrapper--form .form--register h2 {
+  font-size: 2.6rem;
+  color: rgb(62, 63, 94);
+}
+
+.section--landing .container .wrapper--form .form--register .wrapper--register {
+  margin-top: 7.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  width: 100%;
+  position: relative;
+}
+
+.section--landing .container .wrapper--form .form--register .register--letter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 2.6rem;
+  margin-bottom: 2.6rem;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--register
+  .register--letter
+  span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  background: transparent;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  transition: all 0.4s ease;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--register
+  .register--letter
+  input:checked
+  ~ span {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--register
+  .register--letter
+  label {
+  cursor: pointer;
+}
+
+.section--landing .container .wrapper--form .form--register .btn--register {
+  width: 100%;
+  text-align: center;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--register
+  .btn--register
+  button {
+  display: inline-block;
+  width: 100%;
+  background: var(--color-secondary);
+  padding: 1.5rem 0;
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  box-shadow: var(--color-secondary) 0px 2px 10px 0px;
+  transition: 0.4s ease;
+  transition-property: background;
+  border: 2px solid transparent;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--register
+  .btn--register
+  button:focus {
+  border: 2px solid #000;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--register
+  .btn--register
+  button:hover {
+  background: #1eb9c7;
+}
+
+.section--landing .container .wrapper--form .form--register .register--contact {
+  margin-top: 3.6rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--register
+  .register--contact
+  p {
+  line-height: 2.4rem;
+}
+
+.section--landing
+  .container
+  .wrapper--form
+  .form--register
+  .register--contact
+  p
+  a {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+/* Switch form */
+
+.section--landing
+  .container
+  #open-register:checked
+  ~ .wrapper--form
+  .form--register {
+  right: 20rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.section--landing
+  .container
+  #open-register:checked
+  ~ .wrapper--form
+  .form--login {
+  right: -10rem;
+  opacity: 0;
+  visibility: hidden;
+}
