@@ -13,7 +13,7 @@
 .section--landing .container .landing--left {
   width: 60rem;
   position: absolute;
-  top: 16.2%;
+  top: 15.8%;
   left: 12.4%;
   text-align: center;
   color: #fff;
@@ -22,13 +22,18 @@
   align-items: center;
 }
 
-.section--landing .container .landing--left .logo img {
-  width: 5.2rem;
+.section--landing .container .landing--left .logo svg {
+  width: 4.2rem;
+  height: 6rem;
+}
+
+.section--landing .container .landing--left .logo svg symbol path {
+  fill: #fff;
 }
 
 .section--landing .container .landing--left h2 {
   margin-top: 2.8rem;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -118,7 +123,8 @@
 
 .section--landing .container .wrapper--form .form--login {
   position: absolute;
-  top: 5.2rem;
+  top: 50%;
+  transform: translateY(-50%);
   right: 20rem;
   background: #fff;
   border-radius: 1rem;
@@ -186,7 +192,7 @@
   .wrapper--login
   .login--option
   .remember--option
-  span {
+  .icon--remember {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -208,7 +214,7 @@
   .login--option
   .remember--option
   input:checked
-  ~ span {
+  ~ .icon--remember {
   background: var(--color-secondary);
   color: #fff;
 }
@@ -293,6 +299,7 @@
   font-weight: 700;
   color: rgb(62, 63, 94);
   position: relative;
+  text-align: center;
 }
 
 .section--landing .container .wrapper--form .form--login p::before {
@@ -459,7 +466,6 @@
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 48.6rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 5.2rem 6.2rem;
@@ -475,6 +481,7 @@
 }
 
 .section--landing .container .wrapper--form .form--register h2 {
+  text-align: center;
   font-size: 2.6rem;
   color: rgb(62, 63, 94);
 }
@@ -496,7 +503,7 @@
   font-weight: 700;
   cursor: pointer;
   justify-content: flex-start;
-  width: 100%;
+  width: fit-content;
   margin-top: 2.6rem;
   margin-bottom: 2.6rem;
 }
@@ -506,7 +513,7 @@
   .wrapper--form
   .form--register
   .register--letter
-  span {
+  .icon--letter {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -526,7 +533,7 @@
   .form--register
   .register--letter
   input:checked
-  ~ span {
+  ~ .icon--letter {
   background: var(--color-secondary);
   color: #fff;
 }
