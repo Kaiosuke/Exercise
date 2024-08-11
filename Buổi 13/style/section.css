@@ -1,0 +1,132 @@
+/* ------------- Heaeder -------------*/
+.section--header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #363636;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 9%;
+  position: relative;
+}
+
+.section--header .menu--bar {
+  display: none;
+  color: #fff;
+  font-size: 22px;
+}
+
+.section--header .header--logo a {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #efefef;
+}
+
+.section--header .header--logo a span {
+  color: var(--color-primary);
+}
+
+.section--header .header--menu .list--menu {
+  display: flex;
+  gap: 2.2rem;
+}
+
+.section--header .header--menu .list--menu li {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.section--header .header--menu .list--menu li:hover {
+  color: var(--color-primary);
+}
+
+.section--header .header--order {
+  display: flex;
+}
+
+.section--header .header--order .switch--theme {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20%;
+}
+
+.section--header .header--order .switch--theme .light--mode,
+.section--header .header--order .switch--theme .dark--mode {
+  font-size: 2.6rem;
+  color: var(--color-primary);
+  position: relative;
+  cursor: pointer;
+}
+
+.section--header .header--order .switch--theme .light--mode::before,
+.section--header .header--order .switch--theme .dark--mode::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.section--header .header--order .btn--secondary {
+  padding: 0.5rem 1rem;
+}
+
+/* ------------- Section hero -------------*/
+.section--hero {
+  background: url(../images/home-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 1rem;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section--hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0, 0, 0, 0.6);
+  border-radius: 1rem;
+}
+
+.section--hero .wrapper--hero {
+  text-align: center;
+  position: relative;
+  z-index: 99;
+  margin-bottom: 4rem;
+}
+
+.section--hero .wrapper--hero span {
+  font-size: 4vw;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-primary);
+}
+
+.section--hero .wrapper--hero h3 {
+  font-size: 5vw;
+  font-weight: 700;
+  color: #fff;
+}
+
+.section--hero .wrapper--hero p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  max-width: 60rem;
+  margin: 1.4rem auto;
+  line-height: 2;
+}
