@@ -428,3 +428,170 @@
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
+
+/* ------------- Section exposition -------------*/
+.section--exposition .heading--exposition {
+  text-align: center;
+}
+
+.section--exposition .heading--exposition h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.section--exposition .wrapper--exposition {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  column-gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.section--exposition .wrapper--exposition .exposition .exposition--img div {
+  aspect-ratio: 6/5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.section--exposition .wrapper--exposition .exposition span {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.section--exposition .wrapper--exposition .exposition h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* ------------- Section review -------------*/
+.section--review .row {
+  align-items: center;
+}
+
+.section--review .heading--review h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.section--review .heading--review p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.section--review .wrapper--review {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+}
+
+.section--review .wrapper--review .review {
+  flex: 1 1 19rem;
+  padding: 2rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 1rem;
+  background: #efefef;
+  transition: all var(--animated-fast) ease;
+}
+
+.section--review .wrapper--review .review:hover {
+  background: #fff;
+}
+
+.section--review .wrapper--review .review p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.section--review .wrapper--review .review .user {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section--review .wrapper--review .review .user img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.section--review .wrapper--review .review .user .info h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.section--review .wrapper--review .review .user .info span {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* ------------- Section contact -------------*/
+.section--contact .heading--contact {
+  text-align: center;
+}
+
+.section--contact .heading--contact h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.section--contact form {
+  background: #fff;
+  padding: 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.section--contact .wrapper--contact {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.section--contact .wrapper--contact .wrapper--input {
+  flex: 1 0 auto;
+  width: 50%;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.section--contact .wrapper--contact .wrapper--input input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  font-size: 1.7rem;
+  color: #333;
+  background: #f7f7f7;
+}
+
+.section--contact .wrapper--contact .wrapper--input input::placeholder {
+  font-size: 1.7rem;
+  color: #333;
+}
+
+.section--contact .wrapper--contact .wrapper--input textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  font-size: 1.7rem;
+  color: #333;
+  background: #f7f7f7;
+  resize: none;
+}
+
+.section--contact .wrapper--contact .wrapper--textarea input::placeholder {
+  font-size: 1.7rem;
+  color: #333;
+}
