@@ -1,6 +1,7 @@
 /* ------------- Heaeder -------------*/
 .section--header {
   position: fixed;
+  z-index: 9999999999;
   top: 0;
   left: 0;
   right: 0;
@@ -9,7 +10,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 9%;
-  position: relative;
 }
 
 .section--header .menu--bar {
@@ -92,6 +92,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 90%;
+  margin: 3.2rem auto;
+  margin-top: 10rem;
+  padding: 3rem 0;
 }
 
 .section--hero::before {
@@ -129,4 +133,298 @@
   max-width: 60rem;
   margin: 1.4rem auto;
   line-height: 2;
+}
+/* ------------- Section booking -------------*/
+.section--booking {
+  max-width: 80%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 3rem 2rem;
+  position: relative;
+  top: -8rem;
+  height: 100%;
+}
+
+.section--booking::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0, 0, 0, 0.06);
+  border-radius: 1rem;
+}
+
+.section--booking .wrapper--booking {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1.6rem;
+}
+
+.section--booking .wrapper--booking .booking--info {
+  flex: 1 1 auto;
+  width: 25rem;
+}
+
+.section--booking .wrapper--booking .booking--info h1 {
+  color: var(--color-primary);
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+.section--booking .wrapper--booking .booking--btn {
+  flex: 1 1 auto;
+  width: 25rem;
+}
+
+.section--booking .wrapper--booking .booking--btn a {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  padding: 1.2rem 1.4rem;
+}
+/* ------------- Section about -------------*/
+
+.section--about .wrapper--about .row {
+  align-items: center;
+}
+
+.section--about .wrapper--about .about--video {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.section--about .wrapper--about .about--video .about--img div {
+  border-radius: 1rem;
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section--about .wrapper--about .about--video .wrapper--about-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 2rem;
+}
+
+.section--about .wrapper--about .about--video .wrapper--about-input span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all var(--animated-fast) ease;
+}
+
+.section--about .wrapper--about .about--video .wrapper--about-input span:hover,
+.section--about .wrapper--about .about--video .wrapper--about-input span:active,
+.section--about .wrapper--about .about--video .wrapper--about-input span:focus {
+  background: var(--color-primary);
+}
+
+.section--about .wrapper--about .about--content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section--about .wrapper--about .about--content span {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.section--about .wrapper--about .about--content h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.section--about .wrapper--about .about--content p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+}
+/* ------------- Section destination -------------*/
+.section--destination .heading--destination {
+  text-align: center;
+}
+
+.section--destination .heading--destination span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.section--destination .heading--destination h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.section--destination .wrapper--destination {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.section--destination .wrapper--destination .destination {
+  background: #fff;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+}
+
+.section--destination .wrapper--destination .destination .destination--img {
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.section--destination .wrapper--destination .destination .destination--img div {
+  aspect-ratio: 14/10;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  transition: all var(--animated-fast) ease;
+}
+
+.section--destination
+  .wrapper--destination
+  .destination:hover
+  .destination--img
+  div {
+  scale: 1.2;
+}
+
+.section--destination .wrapper--destination .destination .destination--content {
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section--destination
+  .wrapper--destination
+  .destination
+  .destination--content
+  h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+}
+
+.section--destination
+  .wrapper--destination
+  .destination
+  .destination--content
+  p {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: rgb(170, 170, 170);
+  line-height: 2.8rem;
+}
+
+.section--destination
+  .wrapper--destination
+  .destination
+  .destination--content
+  a {
+  font-size: 1.7rem;
+  color: var(--color-primary);
+  position: absolute;
+  right: 1.6rem;
+  bottom: 1rem;
+  transition: all var(--animated-fast) ease;
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+}
+
+.section--destination
+  .wrapper--destination
+  .destination
+  .destination--content
+  a:hover,
+.section--destination
+  .wrapper--destination
+  .destination
+  .destination--content
+  a:active,
+.section--destination
+  .wrapper--destination
+  .destination
+  .destination--content
+  a:focus {
+  gap: 1rem;
+}
+
+.section--destination
+  .wrapper--destination
+  .destination
+  .destination--content
+  a
+  span {
+  font-size: 1.4rem;
+}
+
+/* ------------- Section destination -------------*/
+.section--service .heading--service {
+  text-align: center;
+}
+
+.section--service .heading--service span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.section--service .heading--service h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.section--service .wrapper--service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.section--service .wrapper--service .service {
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.4rem;
+  transition: all var(--animated-fast) ease;
+}
+
+.section--service .wrapper--service .service:hover {
+  background: #fff;
+}
+
+.section--service .wrapper--service .service .service--icon {
+  color: var(--color-primary);
+  font-size: 4rem;
+}
+
+.section--service .wrapper--service .service h4 {
+  font-size: 2rem;
+}
+
+.section--service .wrapper--service .service p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
 }

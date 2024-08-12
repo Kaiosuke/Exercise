@@ -12,8 +12,14 @@
   --color-secondary: rgba(255, 165, 0, 0.2);
   --animated-fast: 0.3s;
   --container-width: 1400px;
-  --column-space: 20px;
+  --column-space: 10px;
   --container-padding: 15px;
+  --margin-section: 60px;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
 }
 
 html {
@@ -24,6 +30,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  background: #efefef;
 }
 
 ul {

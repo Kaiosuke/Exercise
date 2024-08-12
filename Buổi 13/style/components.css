@@ -1,7 +1,12 @@
 .container {
-  max-width: 90%;
+  max-width: 82%;
   margin: 3.2rem auto;
   padding: 0;
+}
+
+.section--margin {
+  margin-top: var(--margin-section);
+  margin-bottom: var(--margin-section);
 }
 
 .btn {
@@ -13,6 +18,7 @@
   transition: all var(--animated-fast) ease;
   border: 1px solid var(--color-primary);
   background: var(--color-primary);
+  width: fit-content;
 }
 
 .btn.btn--primary {
