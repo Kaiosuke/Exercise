@@ -199,6 +199,154 @@
   .section--review .wrapper--review .review .user .info span {
     font-size: 1.3rem;
   }
+
+  /* ------------- Section contact -------------*/
+
+  .section--contact .heading--contact h2 {
+    font-size: 2.6rem;
+  }
+
+  .section--contact .wrapper--contact .wrapper--input {
+    margin-top: 1rem;
+  }
+
+  .section--contact .wrapper--contact .wrapper--input input {
+    font-size: 1.5rem;
+  }
+
+  .section--contact .wrapper--contact .wrapper--input input::placeholder {
+    font-size: 1.5rem;
+  }
+
+  .section--contact .wrapper--contact .wrapper--input textarea {
+    font-size: 1.5rem;
+    height: 13rem;
+  }
+
+  .section--contact .wrapper--contact .wrapper--textarea input::placeholder {
+    font-size: 1.5rem;
+  }
+
+  .section--contact form button {
+    font-size: 1.8rem;
+  }
+  /* ------------- Section blogs -------------*/
+
+  .section--blogs .heading--blogs span {
+    font-size: 1.8rem;
+  }
+
+  .section--blogs .heading--blogs h3 {
+    font-size: 3.5rem;
+  }
+
+  .section--blogs .wrapper--blogs .blogs .blogs--content a {
+    font-size: 1.8rem;
+  }
+
+  .section--blogs .wrapper--blogs .blogs .blogs--content p {
+    font-size: 1.2rem;
+  }
+
+  .section--blogs .wrapper--blogs .blogs .blogs--content .author a {
+    font-size: 1.2rem;
+  }
+
+  /* ------------- Section banner -------------*/
+
+  .section--banner .wrapper--banner span {
+    font-size: 1.8rem;
+  }
+
+  .section--banner .wrapper--banner h3 {
+    font-size: 3.5rem;
+  }
+
+  .section--banner .wrapper--banner p {
+    font-size: 1.2rem;
+  }
+  .section--banner .wrapper--banner a {
+    font-size: 1.8rem;
+  }
+
+  /* ------------- footer -------------*/
+
+  .section--footer .heading--footer .wrapper--footer > a {
+    font-size: 2.2rem;
+  }
+
+  .section--footer .heading--footer .wrapper--footer p {
+    font-size: 1.2rem;
+  }
+
+  .section--footer
+    .heading--footer
+    .wrapper--footer
+    .links--footer-media
+    ul
+    li
+    a {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--color-primary);
+  }
+
+  .section--footer
+    .heading--footer
+    .wrapper--footer
+    .links--footer-media
+    ul
+    li
+    a
+    i {
+    font-size: 1.5rem;
+  }
+
+  .section--footer .heading--footer .wrapper--footer > h3 {
+    font-size: 1.9rem;
+  }
+
+  .section--footer
+    .heading--footer
+    .wrapper--footer
+    .links--footer-nav
+    ul
+    li
+    a {
+    font-size: 1.2rem;
+  }
+
+  .section--footer
+    .heading--footer
+    .wrapper--footer
+    .links--footer-nav
+    ul
+    li
+    + li {
+    margin-top: 1.2rem;
+  }
+
+  .section--footer
+    .heading--footer
+    .wrapper--footer
+    .links--footer-contact
+    ul
+    li {
+    font-size: 1.2rem;
+  }
+
+  .section--footer .heading--footer .wrapper--footer input {
+    border: 1px solid var(--color-primary);
+    font-size: 1.3rem;
+  }
+
+  .section--footer .heading--footer .wrapper--footer input ~ a {
+    font-size: 1.8rem;
+  }
+
+  .section--footer .footer--copyright {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -278,6 +426,11 @@
     .destination
     .destination--content {
     margin-bottom: 2rem;
+  }
+
+  /* ------------- footer -------------*/
+  .section--footer .wrapper--footer + .wrapper--footer {
+    margin-top: 2rem;
   }
 }
 
@@ -448,6 +601,76 @@
   .section--review .wrapper--review .review .user .info span {
     font-size: 1.2rem;
   }
+
+  /* ------------- Section contact -------------*/
+
+  .section--contact .heading--contact h2 {
+    font-size: 2.4rem;
+  }
+
+  .section--contact .wrapper--contact .wrapper--input {
+    width: 100%;
+  }
+
+  .section--contact .wrapper--contact .wrapper--input input {
+    font-size: 1.3rem;
+  }
+
+  .section--contact .wrapper--contact .wrapper--input input::placeholder {
+    font-size: 1.3rem;
+  }
+
+  .section--contact .wrapper--contact .wrapper--input textarea {
+    font-size: 1.3rem;
+    height: 12rem;
+  }
+
+  .section--contact .wrapper--contact .wrapper--textarea input::placeholder {
+    font-size: 1.3rem;
+  }
+
+  .section--contact form button {
+    font-size: 1.6rem;
+  }
+
+  /* ------------- Section blogs -------------*/
+
+  .section--blogs .heading--blogs span {
+    font-size: 1.6rem;
+  }
+
+  .section--blogs .heading--blogs h3 {
+    font-size: 3.2rem;
+  }
+
+  .section--blogs .wrapper--blogs .blogs .blogs--content a {
+    font-size: 1.6rem;
+  }
+
+  .section--blogs .wrapper--blogs .blogs .blogs--content p {
+    font-size: 1.1rem;
+  }
+
+  .section--blogs .wrapper--blogs .blogs .blogs--content .author a {
+    font-size: 1.1rem;
+  }
+
+  /* ------------- Section banner -------------*/
+
+  .section--banner .wrapper--banner span {
+    font-size: 1.6rem;
+  }
+
+  .section--banner .wrapper--banner h3 {
+    font-size: 2.2rem;
+  }
+
+  .section--banner .wrapper--banner p {
+    font-size: 1.1rem;
+  }
+  .section--banner .wrapper--banner a {
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (max-width: 349.98px) {
@@ -456,4 +679,5 @@
   .section--header .header--order .switch--theme {
     right: 38%;
   }
+  /* ------------- Section blogs -------------*/
 }
