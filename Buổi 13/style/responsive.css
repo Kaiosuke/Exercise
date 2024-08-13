@@ -435,6 +435,13 @@
 }
 
 @media screen and (max-width: 449.98px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
   /* ------------- Header -------------*/
 
   .section--header .header--menu {

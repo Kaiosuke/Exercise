@@ -12,6 +12,10 @@
   padding: 1.5rem 9%;
 }
 
+.section--header.scroll {
+  background: #363636ee;
+}
+
 .section--header .menu--bar {
   display: none;
   color: #fff;

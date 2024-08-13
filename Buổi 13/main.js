@@ -30,8 +30,6 @@ const img1 = document.querySelector(".img-sea");
 const img2 = document.querySelector(".img-castle");
 const img3 = document.querySelector(".img-couple");
 
-console.log(btn1, btn2, btn3, img1, img2, img3);
-
 const switchImg = () => {
   btn1.addEventListener("click", () => {
     btn1.classList.add("bg-primary");
@@ -76,6 +74,20 @@ const loadPage = () => {
   }, 1500);
 };
 
-console.log(loader);
-
 loadPage();
+
+//Scroll header
+
+const header = document.querySelector(".section--header");
+
+const scrollHeader = () => {
+  if (document.documentElement.scrollTop > 150) {
+    header.classList.add("scroll");
+  } else {
+    header.classList.remove("scroll");
+  }
+};
+
+window.onscroll = () => {
+  scrollHeader();
+};
