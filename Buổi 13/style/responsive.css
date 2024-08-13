@@ -2,6 +2,7 @@
 @import url(./components.css);
 @import url(./grid.css);
 @import url(./section.css);
+@import url(./utilities.css);
 
 @media screen and (max-width: 990.98px) {
   /* ------------- Header -------------*/
@@ -428,9 +429,8 @@
     margin-bottom: 2rem;
   }
 
-  /* ------------- footer -------------*/
-  .section--footer .wrapper--footer + .wrapper--footer {
-    margin-top: 2rem;
+  .section--footer .heading--footer .wrapper--footer {
+    padding-top: 2rem;
   }
 }
 
@@ -671,6 +671,83 @@
   .section--banner .wrapper--banner a {
     font-size: 1.6rem;
   }
+
+  /* ------------- footer -------------*/
+
+  .section--footer .heading--footer .wrapper--footer > a {
+    font-size: 2rem;
+  }
+
+  .section--footer .heading--footer .wrapper--footer p {
+    font-size: 1.1rem;
+  }
+
+  .section--footer
+    .heading--footer
+    .wrapper--footer
+    .links--footer-media
+    ul
+    li
+    a {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  .section--footer
+    .heading--footer
+    .wrapper--footer
+    .links--footer-media
+    ul
+    li
+    a
+    i {
+    font-size: 1.4rem;
+  }
+
+  .section--footer .heading--footer .wrapper--footer > h3 {
+    font-size: 1.8rem;
+  }
+
+  .section--footer
+    .heading--footer
+    .wrapper--footer
+    .links--footer-nav
+    ul
+    li
+    a {
+    font-size: 1.1rem;
+  }
+
+  .section--footer
+    .heading--footer
+    .wrapper--footer
+    .links--footer-nav
+    ul
+    li
+    + li {
+    margin-top: 1.1rem;
+  }
+
+  .section--footer
+    .heading--footer
+    .wrapper--footer
+    .links--footer-contact
+    ul
+    li {
+    font-size: 1.1rem;
+  }
+
+  .section--footer .heading--footer .wrapper--footer input {
+    font-size: 1.2rem;
+  }
+
+  .section--footer .heading--footer .wrapper--footer input ~ a {
+    font-size: 1.8rem;
+  }
+
+  .section--footer .footer--copyright {
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (max-width: 349.98px) {
@@ -679,5 +756,4 @@
   .section--header .header--order .switch--theme {
     right: 38%;
   }
-  /* ------------- Section blogs -------------*/
 }

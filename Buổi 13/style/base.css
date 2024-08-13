@@ -10,9 +10,11 @@
 :root {
   --color-primary: #ffa500;
   --color-secondary: rgba(255, 165, 0, 0.2);
+  --color-dark-primary: #111111;
+  --color-dark-secondary: #222222;
   --animated-fast: 0.3s;
   --container-width: 1400px;
-  --column-space: 10px;
+  --column-space: 20px;
   --container-padding: 15px;
   --margin-section: 60px;
 }
@@ -26,12 +28,13 @@ html {
   font-size: 62.5%;
   font-family: "Nunito", sans-serif;
   text-transform: capitalize;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
   background: #efefef;
+  transition: all var(--animated-fast) ease;
 }
 
 ul {
@@ -55,4 +58,16 @@ button {
 
 img {
   width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
 }

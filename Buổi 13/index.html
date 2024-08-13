@@ -30,22 +30,22 @@
       <nav class="header--menu">
         <ul class="list--menu">
           <li><a href="#!">Trang Chủ</a></li>
-          <li><a href="#!">About</a></li>
-          <li><a href="#!">Điểm đến</a></li>
-          <li><a href="#!">Dịch Vụ</a></li>
-          <li><a href="#!">Ảnh</a></li>
-          <li><a href="#!">Blogs</a></li>
+          <li><a href="#web-about">About</a></li>
+          <li><a href="#web-destination">Điểm đến</a></li>
+          <li><a href="#web-service">Dịch Vụ</a></li>
+          <li><a href="#web-expsition">Ảnh</a></li>
+          <li><a href="#web-blog">Blogs</a></li>
         </ul>
         <!--End link menu-->
       </nav>
       <!--End links menu-->
       <div class="header--order">
         <div class="switch--theme">
-          <div class="light--mode">
+          <div class="light--mode active">
             <i class="fa-regular fa-moon"></i>
           </div>
           <!--End light mode-->
-          <div class="dark--mode" hidden>
+          <div class="dark--mode">
             <i class="fa-regular fa-sun"></i>
           </div>
           <!--End dark mode-->
@@ -59,7 +59,7 @@
       <!--End header order-->
     </header>
     <!--End section header-->
-    <section class="section--hero">
+    <section class="section--hero" id="web-hero">
       <div class="wrapper--hero">
         <span>Mumbai</span>
         <h3>thành phố có tất cả</h3>
@@ -69,7 +69,7 @@
           vẫn mang nhiều nét cổ kính với những công trình kiến trúc, quán bar,
           nhà hàng, viện bảo tàng và các cửa hàng thời trang hấp dẫn…
         </p>
-        <a href="#!" class="btn btn--secondary">Tìm hiểu thêm</a>
+        <a href="#web-destination" class="btn btn--secondary">Tìm hiểu thêm</a>
       </div>
       <!--End wrapper hero-->
     </section>
@@ -77,9 +77,7 @@
     <section class="section--booking section--margin">
       <form class="wrapper--booking">
         <div class="booking--info">
-          <span>
-            <h1>Ưu đãi 30.000.000 cho 5người/3ngày</h1>
-          </span>
+          <h1>Ưu đãi 30.000.000 cho 5người/3ngày</h1>
         </div>
         <!--End booking info-->
         <div class="booking--btn">
@@ -90,44 +88,37 @@
       <!--End wrapper booking-->
     </section>
     <!--End section booking-->
-    <section class="section--about section--margin container">
+    <section class="section--about section--margin container" id="web-about">
       <div class="wrapper--about">
         <div class="row">
           <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-6 col-sm-12 col-12">
             <div class="about--video">
               <div class="about--img">
-                <div style="background-image: url(./images/blog-1.jpg)"></div>
+                <div
+                  class="img-sea active"
+                  style="background-image: url(./images/blog-1.jpg)"
+                ></div>
+                <div
+                  class="img-castle"
+                  style="background-image: url(./images/blog-2.jpg)"
+                ></div>
+                <div
+                  class="img-couple"
+                  style="background-image: url(./images/blog-3.jpg)"
+                ></div>
               </div>
               <!--End about img-->
               <div class="wrapper--about-input">
                 <div class="wrapper--switch">
-                  <input
-                    type="radio"
-                    name="check-video"
-                    id="about-sea"
-                    hidden
-                  />
-                  <span></span>
+                  <span class="about-sea bg-primary"></span>
                 </div>
                 <!--End wrapper switch-->
                 <div class="wrapper--switch">
-                  <input
-                    type="radio"
-                    name="check-video"
-                    id="about-castle"
-                    hidden
-                  />
-                  <span></span>
+                  <span class="about-castle"></span>
                 </div>
                 <!--End wrapper switch-->
                 <div class="wrapper--switch">
-                  <input
-                    type="radio"
-                    name="check-video"
-                    id="about-couple"
-                    hidden
-                  />
-                  <span></span>
+                  <span class="about-couple"></span>
                 </div>
                 <!--End wrapper switch-->
               </div>
@@ -145,7 +136,9 @@
                 bậc nhất để đem lại một kỳ nghỉ tuyệt vời cho bạn cùng người
                 thân
               </p>
-              <a href="#!" class="btn btn--primary">Tìm hiểu thêm về stravel</a>
+              <a href="#web-hero" class="btn btn--primary">
+                Tìm hiểu thêm về stravel
+              </a>
             </div>
             <!--End wrapper about content-->
           </div>
@@ -156,7 +149,10 @@
       <!--End wrapper about-->
     </section>
     <!--End section about-->
-    <section class="section--destination section--margin container">
+    <section
+      class="section--destination section--margin container"
+      id="web-destination"
+    >
       <div class="heading--destination">
         <span>Những điểm đến ở Mumbai</span>
         <h3>Những điểm du lịch bậc nhất</h3>
@@ -174,7 +170,7 @@
               được xây dựng vào năm 1931, còn có tên gọi khác là “bia kỷ niệm
               chiến sĩ Ấn Độ”
             </p>
-            <a href="#!">
+            <a href="#web-hero">
               Đọc thêm
               <span><i class="fa-solid fa-chevron-right"></i></span
             ></a>
@@ -193,7 +189,7 @@
               nghệ thuật kiến trúc thị giác kết hợp với cách sản xuất, sử dụng
               và tái tạo năng lượng thông minh
             </p>
-            <a href="#!">
+            <a href="#web-hero">
               Đọc thêm
               <span><i class="fa-solid fa-chevron-right"></i></span
             ></a>
@@ -212,7 +208,7 @@
               bao gồm loài bướm đêm Atlas – bướm đêm lớn nhất thế giới, cây hoa
               Karvi 7 năm nở hoa một lần…
             </p>
-            <a href="#!">
+            <a href="#web-hero">
               Đọc thêm
               <span><i class="fa-solid fa-chevron-right"></i></span
             ></a>
@@ -231,7 +227,7 @@
               khu vực triển lãm hàng đầu ở Mumbai dành cho nền mỹ thuật Ấn Độ
               đương đại
             </p>
-            <a href="#!">
+            <a href="#web-hero">
               Đọc thêm
               <span><i class="fa-solid fa-chevron-right"></i></span
             ></a>
@@ -250,7 +246,7 @@
               lưu giữ nhiều kiến trúc chạm khắc tinh xảo và chúng đã xuất hiện ở
               đây từ thế kỷ thứ 5 đến thứ 8
             </p>
-            <a href="#!">
+            <a href="#web-hero">
               Đọc thêm
               <span><i class="fa-solid fa-chevron-right"></i></span
             ></a>
@@ -269,7 +265,7 @@
               khu nghỉ dưỡng rất nổi tiếng, nằm giữa đường cao tốc Mumbai –
               Pune.
             </p>
-            <a href="#!">
+            <a href="#web-hero">
               Đọc thêm
               <span><i class="fa-solid fa-chevron-right"></i></span
             ></a>
@@ -288,7 +284,7 @@
               Giáo dục, nghệ thuật và âm nhạc là trọng tâm tại thành phố có nền
               văn hóa phong phú lâu đời này
             </p>
-            <a href="#!">
+            <a href="#web-hero">
               Đọc thêm
               <span><i class="fa-solid fa-chevron-right"></i></span
             ></a>
@@ -307,7 +303,7 @@
               là trung tâm hành hương lớn của người Hindu. Nashik có sự pha trộn
               của nét cổ xưa và hiện đại
             </p>
-            <a href="#!">
+            <a href="#web-hero">
               Đọc thêm
               <span><i class="fa-solid fa-chevron-right"></i></span
             ></a>
@@ -319,7 +315,10 @@
       <!--End wrapper destination-->
     </section>
     <!--End section destination-->
-    <section class="section--service section--margin container">
+    <section
+      class="section--service section--margin container"
+      id="web-service"
+    >
       <div class="heading--service">
         <span>Dịch vụ</span>
         <h3>Nâng cao trải nghiệm</h3>
@@ -390,7 +389,10 @@
       <!--End wrapper service-->
     </section>
     <!--End section service-->
-    <section class="section--exposition section--margin container">
+    <section
+      class="section--exposition section--margin container"
+      id="web-expsition"
+    >
       <div class="heading--exposition">
         <h2>những bức Ảnh về Mumbai</h2>
       </div>
@@ -490,7 +492,7 @@
       <!--End wrapper exposition-->
     </section>
     <!--End section-->
-    <section class="section--review section-margin container">
+    <section class="section--review section-margin container" id="web-review">
       <div class="row">
         <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-6 col-sm-12 col-12">
           <div class="heading--review">
@@ -573,7 +575,10 @@
       <!--End row-->
     </section>
     <!--End section view-->
-    <section class="section--contact section--margin container">
+    <section
+      class="section--contact section--margin container"
+      id="web-contact"
+    >
       <div class="heading--contact">
         <h2>Đánh giá</h2>
       </div>
@@ -640,7 +645,7 @@
               <!--End wrapper input-->
             </div>
             <!--End wrapper contact-->
-            <button class="btn btn--primary">Gửi tới stravel</button>
+            <a href="#web-hero" class="btn btn--primary">Gửi tới stravel</a>
           </form>
           <!--End form-->
         </div>
@@ -649,7 +654,7 @@
       <!--End row-->
     </section>
     <!--End section contact-->
-    <section class="section--blogs section--margin container">
+    <section class="section--blogs section--margin container" id="web-blogs">
       <div class="heading--blogs">
         <span>blogs & posts</span>
         <h3>Tìm hiểu thêm về Mumbai</h3>
@@ -750,7 +755,7 @@
       <!--End wrapper blogs-->
     </section>
     <!--End section-->
-    <section class="section--banner secion--marign">
+    <section class="section--banner secion--marign" id="web-banner">
       <div class="wrapper--banner">
         <span>Cùng STravel</span>
         <h3>bắt đầu chuyến đi của bạn</h3>
@@ -758,8 +763,9 @@
           Mỗi chuyến đi đều là kỷ niệm đẹp. Hãy cũng STravel ghi lại kỷ niệm
           này!
         </p>
-        <a href="#!" class="btn btn--primary">Đặt ngay</a>
+        <a href="#web-hero" class="btn btn--primary">Đặt ngay</a>
       </div>
+      <!--Wrapper banner-->
     </section>
     <!--End section banner-->
     <footer class="section--footer">
@@ -792,8 +798,11 @@
                     </li>
                   </ul>
                 </nav>
+                <!--End links footer media-->
               </div>
+              <!--End wrapper footer-->
             </div>
+            <!--End col-->
             <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
               <div class="wrapper--footer">
                 <h3>chuyển hướng nhanh</h3>
@@ -806,39 +815,42 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#!">
+                      <a href="#web-about">
                         <i class="fa-solid fa-arrow-right"> </i>
                         <span>about</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#!">
+                      <a href="#web-destination">
                         <i class="fa-solid fa-arrow-right"> </i>
                         <span>điểm đến</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#!">
+                      <a href="#web-service">
                         <i class="fa-solid fa-arrow-right"> </i>
                         <span>dịch vụ</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#!">
+                      <a href="#web-expsition">
                         <i class="fa-solid fa-arrow-right"> </i>
                         <span>ảnh</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#!">
+                      <a href="#web-blogs">
                         <i class="fa-solid fa-arrow-right"> </i>
                         <span>blog</span>
                       </a>
                     </li>
                   </ul>
                 </nav>
+                <!--End links footer nav-->
               </div>
+              <!--End wrapper footer-->
             </div>
+            <!--End col-->
             <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
               <div class="wrapper--footer">
                 <h3>Liên hệ</h3>
@@ -864,8 +876,11 @@
                     </li>
                   </ul>
                 </div>
+                <!--End links footer contact-->
               </div>
+              <!--End wrapper footer-->
             </div>
+            <!--End col-->
             <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
               <div class="wrapper--footer">
                 <h3>tin tức mới</h3>
@@ -878,13 +893,23 @@
                 />
                 <a href="#!" class="btn btn--secondary">đăng ký</a>
               </div>
+              <!--End wrapper input-->
             </div>
+            <!--End col-->
           </div>
+          <!--End row-->
         </div>
         <div class="footer--copyright">
           <p>created by <span>STravel</span> | all rights reserved!</p>
         </div>
+        <!--End copy right-->
+      </div>
+      <!--End container-->
+      <div class="wrapper--loader">
+        <div class="loader"></div>
       </div>
     </footer>
+    <!--End footer-->
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -52,18 +52,13 @@
   top: 50%;
   transform: translateY(-50%);
   right: 20%;
-}
-
-.section--header .header--order .switch--theme .light--mode,
-.section--header .header--order .switch--theme .dark--mode {
-  font-size: 2.6rem;
-  color: var(--color-primary);
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
-.section--header .header--order .switch--theme .light--mode::before,
-.section--header .header--order .switch--theme .dark--mode::before {
+.section--header .header--order .switch--theme::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -73,7 +68,12 @@
   height: 3rem;
   border: 2px solid var(--color-primary);
   border-radius: 50%;
-  cursor: pointer;
+}
+
+.section--header .header--order .switch--theme .light--mode,
+.section--header .header--order .switch--theme .dark--mode {
+  font-size: 2.4rem;
+  color: var(--color-primary);
 }
 
 .section--header .header--order .btn--secondary {
@@ -745,7 +745,8 @@
   color: #eee;
 }
 
-/* ------------- footer -------------*/
+/* ------------- Footer -------------*/
+
 .section--footer {
   background: #222222;
   padding: 1rem 0 1rem;
@@ -955,4 +956,69 @@
 
 .section--footer .footer--copyright span {
   color: var(--color-primary);
+}
+
+/* ------------- Dark mode -------------*/
+
+.light--mode {
+  display: none;
+}
+
+.dark--mode {
+  display: none;
+}
+
+/* ------------- Switch img -------------*/
+
+.img-sea,
+.img-castle,
+.img-couple {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.bg-primary {
+  background: var(--color-primary) !important;
+}
+
+/* ------------- Loader -------------*/
+
+.wrapper--loader {
+  position: fixed;
+  z-index: 99999999999999999999999999999999999;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-dark-primary);
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 3px;
+  background: radial-gradient(farthest-side, #ffa516 95%, #0000) 50% 0/12px 12px
+      no-repeat,
+    radial-gradient(
+        farthest-side,
+        #0000 calc(100% - 5px),
+        #ffa516 calc(100% - 4px)
+      )
+      content-box;
+  animation: l6 2s infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@keyframes l6 {
+  to {
+    transform: rotate(1turn);
+  }
 }
