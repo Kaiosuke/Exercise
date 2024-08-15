@@ -643,6 +643,43 @@ select {
   grid-template-areas: "sidebar header header header header" "sidebar main main main main" "sidebar main main main main" "sidebar main main main main" "sidebar main main main main";
 }
 
+.overflowHidden {
+  overflow: hidden;
+}
+
+.helper {
+  width: fit-content;
+  position: fixed;
+  bottom: 2%;
+  transform: translateX(270%);
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+  gap: 2rem;
+}
+.helper > .wrapper--helper {
+  width: 4rem;
+  height: 4rem;
+  background: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.helper > .wrapper--helper img {
+  width: 1.8rem;
+  display: inline-block;
+  position: relative;
+}
+.helper span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1199.98) {
+  .helper {
+    display: none;
+  }
+}
 @media screen and (max-width: 991.98px) {
   .container {
     display: grid;
@@ -672,14 +709,14 @@ select {
   #open-explore:checked ~ .container .main {
     left: 30rem;
   }
+  .helper {
+    display: none;
+  }
 }
 @media screen and (max-width: 575.98px) {
   #open-explore:checked ~ .container .main {
     left: 26rem;
   }
-}
-.overflowHidden {
-  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

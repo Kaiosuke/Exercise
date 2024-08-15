@@ -39,6 +39,44 @@ select {
     "sidebar main main main main";
 }
 
+.overflowHidden {
+  overflow: hidden;
+}
+
+.helper {
+  width: fit-content;
+  position: fixed;
+  bottom: 2%;
+  transform: translateX(270%);
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+  gap: 2rem;
+  > .wrapper--helper {
+    width: 4rem;
+    height: 4rem;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    img {
+      width: 1.8rem;
+      display: inline-block;
+      position: relative;
+    }
+  }
+  span {
+    font-weight: 600;
+  }
+}
+
+@include pc-device {
+  .helper {
+    display: none;
+  }
+}
+
 @include miniPc-device {
   .container {
     display: grid;
@@ -78,6 +116,10 @@ select {
       }
     }
   }
+
+  .helper {
+    display: none;
+  }
 }
 
 @include mobile-device {
@@ -90,8 +132,4 @@ select {
       }
     }
   }
-}
-
-.overflowHidden {
-  overflow: hidden;
 }

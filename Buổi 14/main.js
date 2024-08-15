@@ -6,7 +6,7 @@ const body = document.body;
 
 const checkOpenExplore = () => {
   label1.addEventListener("click", () => {
-    body.classList.add("overflowHidden");
+    body.classList.toggle("overflowHidden");
   });
 };
 
