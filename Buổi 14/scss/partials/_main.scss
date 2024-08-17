@@ -27,6 +27,7 @@
     top: 10rem;
     left: 0;
     transition: all 0.4s ease-in-out;
+    gap: 1.8rem;
     .wide {
       grid-column: span 1;
     }
@@ -44,6 +45,7 @@
     position: relative;
     left: 0;
     transition: all 0.4s ease-in-out;
+    gap: 1.5rem;
     .wide {
       grid-column: span 2;
     }
@@ -61,6 +63,7 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 20rem;
     margin-top: 2rem;
+    gap: 1.2rem;
     .wide {
       grid-column: span 2;
     }
