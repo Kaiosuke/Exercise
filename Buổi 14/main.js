@@ -34,5 +34,3 @@ const openBar = () => {
 };
 
 openBar();
-
-// open menu
