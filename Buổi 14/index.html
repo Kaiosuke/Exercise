@@ -20,6 +20,7 @@
   <body>
     <div class="wrapper">
       <input type="checkbox" id="open-explore" hidden />
+      <input type="checkbox" id="open-menu" hidden />
       <div class="container">
         <label for="open-explore" class="overlay"></label>
         <aside class="sidebar">
@@ -131,9 +132,13 @@
               </a>
             </div>
             <!-- End user -->
-            <label for="open-explore" class="bar">
-              <i class="fa-solid fa-bars"></i>
-            </label>
+            <div class="bar">
+              <i class="fa-solid fa-bars"> </i>
+              <div class="wrapper-bar">
+                <label for="open-explore" class="explore-bar">Explore</label>
+                <label for="open-menu" class="menu-bar">Menu</label>
+              </div>
+            </div>
           </div>
           <!-- End wrapper user -->
         </header>

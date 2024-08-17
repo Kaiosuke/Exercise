@@ -4,7 +4,6 @@
   align-items: center;
   height: 15rem;
   background: #fff;
-
   .logo {
     position: relative;
     display: inline-block;
@@ -102,6 +101,27 @@
     .wrapper--user {
       .bar {
         display: block;
+        position: relative;
+        cursor: pointer;
+        .wrapper-bar {
+          position: absolute;
+          display: none;
+          flex-direction: column;
+          top: 2rem;
+          right: 0rem;
+          width: fit-content;
+          background: #fff;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          overflow: hidden;
+          label {
+            padding: 2rem 4rem;
+            text-transform: none;
+            font-size: 1.5rem;
+          }
+          .menu-bar {
+            display: none;
+          }
+        }
       }
     }
     .wrapper--input {
@@ -116,51 +136,107 @@
 @include tablet-device {
   .header {
     padding: 1.6rem 2rem;
-    align-items: flex-start;
+    align-items: center;
+    .logo {
+      > span {
+        font-size: 2rem;
+      }
+    }
     .wrapper--input {
       margin-left: auto;
       position: relative;
-      top: 4px;
+      top: 0px;
+      img {
+        width: 1.9rem;
+      }
     }
+
     .wrapper--nav {
-      position: absolute;
-      top: 5.2rem;
-      left: 50%;
-      width: 100vw;
-      height: 4rem;
-      transform: translateX(-50%);
-      background: transparent;
+      position: fixed;
+      top: 8rem;
+      right: -100%;
+      transition: all 0.4s ease-in-out;
       ul {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 4rem;
-      }
-      li {
-        a {
-          font-weight: 700;
-          padding: 0.8rem 0;
+        flex-direction: column;
+        height: fit-content;
+        align-items: flex-start;
+        background: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        gap: 2rem;
+        li {
+          padding: 1rem 2rem;
         }
-        &:first-of-type {
-          a {
-            border-bottom: 2px solid #000;
+      }
+    }
+
+    .wrapper--input {
+      img {
+        width: 1.6rem;
+      }
+    }
+
+    .wrapper--user {
+      padding-left: 2rem;
+      .cart {
+        a {
+          img {
+            width: 2.4rem;
           }
         }
       }
-    }
-    .wrapper--user {
-      padding-left: 2rem;
+      .user {
+        a {
+          img {
+            width: 2.4rem;
+          }
+        }
+      }
+      .bar {
+        .wrapper-bar {
+          .menu-bar {
+            display: block;
+          }
+        }
+      }
     }
   }
 }
 
 @include mobile-device {
   .header {
-    height: 10rem;
+    .logo {
+      > span {
+        font-size: 1.8rem;
+      }
+    }
     .wrapper--nav {
-      position: absolute;
-      top: 6.4rem;
-      left: 50%;
+      ul {
+        gap: 2rem;
+        li {
+          a {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+
+    .wrapper--user {
+      padding-left: 2rem;
+      .cart {
+        a {
+          img {
+            width: 2rem;
+          }
+        }
+      }
+      .user {
+        a {
+          img {
+            width: 2rem;
+          }
+        }
+      }
     }
   }
 }

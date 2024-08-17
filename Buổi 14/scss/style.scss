@@ -43,6 +43,10 @@ select {
   overflow: hidden;
 }
 
+.open-bar {
+  display: flex !important;
+}
+
 @include pc-device {
   .helper {
     display: none !important;
@@ -94,12 +98,54 @@ select {
   }
 }
 
-@include mobile-device {
+@include tablet-device {
+  #open-menu {
+    &:checked {
+      & ~ .container {
+        .header {
+          .wrapper--nav {
+            right: 0;
+          }
+        }
+        .main {
+          left: -13rem;
+        }
+      }
+    }
+  }
+
   #open-explore {
     &:checked {
       & ~ .container {
         .main {
-          left: 26rem;
+          left: 25rem;
+        }
+      }
+    }
+  }
+}
+
+@include mobile-device {
+  #open-menu {
+    &:checked {
+      & ~ .container {
+        .header {
+          .wrapper--nav {
+            right: 0;
+          }
+        }
+        .main {
+          left: -12rem;
+        }
+      }
+    }
+  }
+
+  #open-explore {
+    &:checked {
+      & ~ .container {
+        .main {
+          left: 19rem;
         }
       }
     }

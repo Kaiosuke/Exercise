@@ -407,6 +407,27 @@ a {
   }
   .header .wrapper--user .bar {
     display: block;
+    position: relative;
+    cursor: pointer;
+  }
+  .header .wrapper--user .bar .wrapper-bar {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 2rem;
+    right: 0rem;
+    width: fit-content;
+    background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: hidden;
+  }
+  .header .wrapper--user .bar .wrapper-bar label {
+    padding: 2rem 4rem;
+    text-transform: none;
+    font-size: 1.5rem;
+  }
+  .header .wrapper--user .bar .wrapper-bar .menu-bar {
+    display: none;
   }
   .header .wrapper--input {
     margin-right: 0;
@@ -418,47 +439,71 @@ a {
 @media screen and (max-width: 767.98px) {
   .header {
     padding: 1.6rem 2rem;
-    align-items: flex-start;
+    align-items: center;
+  }
+  .header .logo > span {
+    font-size: 2rem;
   }
   .header .wrapper--input {
     margin-left: auto;
     position: relative;
-    top: 4px;
+    top: 0px;
+  }
+  .header .wrapper--input img {
+    width: 1.9rem;
   }
   .header .wrapper--nav {
-    position: absolute;
-    top: 5.2rem;
-    left: 50%;
-    width: 100vw;
-    height: 4rem;
-    transform: translateX(-50%);
-    background: transparent;
+    position: fixed;
+    top: 8rem;
+    right: -100%;
+    transition: all 0.4s ease-in-out;
   }
   .header .wrapper--nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
+    flex-direction: column;
+    height: fit-content;
+    align-items: flex-start;
+    background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    gap: 2rem;
   }
-  .header .wrapper--nav li a {
-    font-weight: 700;
-    padding: 0.8rem 0;
+  .header .wrapper--nav ul li {
+    padding: 1rem 2rem;
   }
-  .header .wrapper--nav li:first-of-type a {
-    border-bottom: 2px solid #000;
+  .header .wrapper--input img {
+    width: 1.6rem;
   }
   .header .wrapper--user {
     padding-left: 2rem;
   }
+  .header .wrapper--user .cart a img {
+    width: 2.4rem;
+  }
+  .header .wrapper--user .user a img {
+    width: 2.4rem;
+  }
+  .header .wrapper--user .bar .wrapper-bar .menu-bar {
+    display: block;
+  }
 }
 @media screen and (max-width: 575.98px) {
-  .header {
-    height: 10rem;
+  .header .logo > span {
+    font-size: 1.8rem;
   }
-  .header .wrapper--nav {
-    position: absolute;
-    top: 6.4rem;
-    left: 50%;
+  .header .wrapper--nav ul {
+    gap: 2rem;
+  }
+  .header .wrapper--nav ul li a {
+    font-size: 1.4rem;
+  }
+  .header .wrapper--user {
+    padding-left: 2rem;
+  }
+  .header .wrapper--user .cart a img {
+    width: 2rem;
+  }
+  .header .wrapper--user .user a img {
+    width: 2rem;
   }
 }
 .sidebar {
@@ -565,12 +610,24 @@ a {
     visibility: hidden;
   }
 }
+@media screen and (max-width: 767.98px) {
+  .sidebar {
+    width: 26rem;
+  }
+  .sidebar .link-products ul li {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (max-width: 575.98px) {
   .sidebar {
     width: 26rem;
     background: #fff;
     padding: 3.2rem 2rem;
     gap: 3.2rem;
+    width: 20rem;
+  }
+  .sidebar .link-products ul li {
+    font-size: 1.4rem;
   }
 }
 .main {
@@ -678,6 +735,10 @@ select {
   overflow: hidden;
 }
 
+.open-bar {
+  display: flex !important;
+}
+
 @media screen and (max-width: 1199.98) {
   .helper {
     display: none !important;
@@ -716,9 +777,26 @@ select {
     display: none;
   }
 }
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 767.98px) {
+  #open-menu:checked ~ .container .header .wrapper--nav {
+    right: 0;
+  }
+  #open-menu:checked ~ .container .main {
+    left: -13rem;
+  }
   #open-explore:checked ~ .container .main {
-    left: 26rem;
+    left: 25rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  #open-menu:checked ~ .container .header .wrapper--nav {
+    right: 0;
+  }
+  #open-menu:checked ~ .container .main {
+    left: -12rem;
+  }
+  #open-explore:checked ~ .container .main {
+    left: 19rem;
   }
 }
 

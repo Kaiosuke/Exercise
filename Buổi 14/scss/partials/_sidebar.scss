@@ -111,11 +111,32 @@
   }
 }
 
+@include tablet-device {
+  .sidebar {
+    width: 26rem;
+    .link-products {
+      ul {
+        li {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
 @include mobile-device {
   .sidebar {
     width: 26rem;
     background: #fff;
     padding: 3.2rem 2rem;
     gap: 3.2rem;
+    width: 20rem;
+    .link-products {
+      ul {
+        li {
+          font-size: 1.4rem;
+        }
+      }
+    }
   }
 }
