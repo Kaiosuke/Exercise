@@ -1,0 +1,69 @@
+@use "./variables";
+
+@mixin col-style($i) {
+  flex-basis: percentage($i / 12);
+  max-width: percentage($i / 12);
+  padding: 0 calc(variables.$colPadding / 2);
+  margin-bottom: calc(variables.$colPadding);
+}
+
+@mixin responsive($breakPoints) {
+  @each $name, $value in $breakPoints {
+    @if $value != null {
+      @media screen and (min-width: $value) {
+        @content;
+      }
+    } @else {
+      @content;
+    }
+  }
+}
+
+@mixin grid-system($breakPoints) {
+  @each $name, $value in $breakPoints {
+    @if $name == "min" {
+      @for $i from 1 through 12 {
+        .col-#{$i} {
+          @include col-style($i);
+        }
+      }
+    } @else {
+      @include responsive((#{$name}: $value)) {
+        @for $i from 1 through 12 {
+          .col-#{$name}-#{$i} {
+            @include col-style($i);
+          }
+        }
+      }
+    }
+  }
+}
+
+@include grid-system(variables.$breakPoints);
+
+@mixin mobile {
+  @media screen and (max-width: 575.98px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 767.98px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (max-width: 992.98px) {
+    @content;
+  }
+}
+@mixin large-desktop {
+  @media screen and (max-width: 1199.98px) {
+    @content;
+  }
+}
+@mixin larger-desktop {
+  @media screen and (max-width: 1399.98px) {
+    @content;
+  }
+}

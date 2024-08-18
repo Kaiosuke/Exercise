@@ -1,0 +1,33 @@
+@use "../partials/variables";
+.header {
+  padding: 2rem 0;
+  .wrapper--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      img {
+        color: variables.$colorPrimary;
+      }
+    }
+    .nav-link {
+      //   display: flex;
+      //   align-items: center;
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          color: variables.$colorPrimary;
+          a {
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    .bar {
+      display: none;
+    }
+  }
+}
