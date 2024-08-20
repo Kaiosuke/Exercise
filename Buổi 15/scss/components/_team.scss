@@ -1,0 +1,68 @@
+@use "../partials/base";
+.team {
+  .wrapper--team {
+    padding: 6rem 0;
+    .heading--team {
+      @extend %heading--section;
+      p {
+        @extend %p-section;
+      }
+    }
+    .main--team {
+      .wrapper--team-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .team--content-image {
+          img {
+            width: 70%;
+            border-radius: 50%;
+          }
+        }
+        h4 {
+          color: base.$base-colorPrimary;
+          margin-top: 3.2rem;
+        }
+
+        p {
+          @extend %p-content;
+          padding: 0 4rem;
+          color: #000;
+        }
+      }
+    }
+
+    .bottom--content {
+      text-align: center;
+    }
+  }
+}
+
+@include base.base-desktop {
+  .team {
+    .wrapper--team {
+      .main--team {
+        .wrapper--team-content {
+          p {
+            padding: 0 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include base.base-tablet {
+  .team {
+    .wrapper--team {
+      .main--team {
+        .wrapper--team-content {
+          p {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

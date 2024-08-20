@@ -1,0 +1,66 @@
+@use "../partials/base";
+.features {
+  @extend %bg-section;
+  .wrapper--features {
+    .heading--features {
+      @extend %heading--section;
+      p {
+        @extend %p-section;
+      }
+    }
+    .main--features {
+      position: relative;
+      z-index: 999;
+      .wrapper--features-content {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+        .list--features {
+          display: flex;
+          gap: 2rem;
+          .features--content {
+            color: #fff;
+            p {
+              @extend %p-content;
+              color: #fff;
+              margin-top: 1rem;
+            }
+          }
+
+          .features--icon {
+            span {
+              color: base.$base-colorPrimary;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 5.2rem;
+              height: 5.2rem;
+              border: 1px solid base.$base-colorPrimary;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+
+      .wrapper--features-image {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@include base.base-tablet {
+  .features {
+    .wrapper--features {
+      .main--features {
+        .row {
+          gap: 2rem;
+        }
+        .wrapper--features-image {
+          display: none;
+        }
+      }
+    }
+  }
+}

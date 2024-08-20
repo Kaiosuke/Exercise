@@ -1,2 +1,58 @@
 @use "./partials/base";
 @use "./components/header";
+@use "./components/footer";
+@use "./components/banner";
+@use "./components/about";
+@use "./components/features";
+@use "./components/team";
+@use "./components/testimonials";
+@use "./components/contact";
+@use "./components/download";
+
+@include base.base-desktop {
+  .header {
+    .wrapper--header {
+      #open-nav {
+        &:checked {
+          & ~ .nav-link {
+            height: 32rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.splide__arrow--prev {
+  left: -6%;
+}
+
+.splide__arrow--next {
+  right: -6%;
+}
+
+@include base.base-tablet {
+  .splide__arrow--prev {
+    display: none;
+  }
+
+  .splide__arrow--next {
+    display: none;
+  }
+}
+
+.logo-white {
+  display: none;
+}
+
+.logo-violet {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.bg-black {
+  color: #000 !important;
+}

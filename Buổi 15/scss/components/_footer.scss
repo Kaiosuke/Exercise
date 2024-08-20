@@ -1,0 +1,18 @@
+@use "../partials/base";
+.footer {
+  text-align: center;
+  span {
+    display: block;
+    padding: 2rem 0;
+    font-size: 1.3rem;
+    color: #242424;
+    a {
+      color: base.$base-colorPrimary;
+      text-decoration: underline transparent;
+      transition: all base.$base-animatedFast;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Splide link to the CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/themes/splide-sea-green.min.css"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -18,7 +24,16 @@
       <div class="container">
         <div class="wrapper--header">
           <a href="#!" class="logo">
-            <img src="./src/images/logo-black.png" alt="logo" />
+            <img
+              class="logo-white show"
+              src="./src/images/logo-black.png"
+              alt="logo"
+            />
+            <img
+              class="logo-violet"
+              src="./src/images/logo-black (2).png"
+              alt="logo"
+            />
           </a>
           <!-- End logo -->
           <input type="checkbox" id="open-nav" hidden />
@@ -34,6 +49,9 @@
                 <a href="#features">Features</a>
               </li>
               <li>
+                <a href="#testimonials">Team</a>
+              </li>
+              <li>
                 <a href="#testimonials">Testimonials</a>
               </li>
               <li>
@@ -46,17 +64,656 @@
           </nav>
           <!-- End nav link -->
           <div class="bar">
-            <label class="fa-solid fa-bars"></label>
+            <label for="open-nav" class="fa-solid fa-bars"></label>
           </div>
+          <!-- End bar -->
         </div>
         <!-- End wrapper header -->
       </div>
       <!-- End container -->
     </header>
     <!-- End header -->
-    <main class="main"></main>
+
+    <main class="main">
+      <section class="banner">
+        <div class="container">
+          <div class="wrapper--banner">
+            <div class="row">
+              <div
+                class="col-2xl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12"
+              >
+                <div class="banner--content">
+                  <h2>Best App Website Template</h2>
+                  <h6>
+                    This awesome template designed by
+                    <a href="#!">W3 Template.</a>
+                  </h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore magni, tempora rerum rem perferendis autem voluptas
+                    qui molestiae dolorem quos? Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dolore magni, tempora rerum
+                    rem ipsum dolor sit am?
+                  </p>
+                  <div class="banner--btn">
+                    <a href="#!">
+                      <img src="./src/images/appstore.png" alt="app store" />
+                    </a>
+                    <a href="#!">
+                      <img src="./src/images/playstore.png" alt="play store" />
+                    </a>
+                  </div>
+                  <!-- End banner btn -->
+                </div>
+                <!-- End banner content -->
+              </div>
+              <!-- End col -->
+              <div
+                class="col-2xl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12"
+              >
+                <div class="banner-image">
+                  <img src="./src/images/iphone-screen.png" alt="iphone" />
+                </div>
+                <!-- End banner image -->
+              </div>
+              <!-- End col -->
+            </div>
+            <!-- End row -->
+          </div>
+          <!-- End wrapper banner -->
+        </div>
+        <!-- End container -->
+        <div class="wave">
+          <img src="./src/images/applight-wave.svg" alt="ware" />
+        </div>
+        <!-- End ware -->
+      </section>
+      <!-- End banner -->
+
+      <section class="about">
+        <div class="container">
+          <div class="wrapper--about">
+            <div class="heading--about">
+              <h3>About</h3>
+              <div class="dashed-line"></div>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
+            </div>
+            <!-- End heading about -->
+            <div class="main--about">
+              <div class="row">
+                <div
+                  class="col-2xl-4 col-xl-4 col-lg-4 col-md-12 -4 col-sm-12 col-12"
+                >
+                  <div class="wrapper--about-content">
+                    <div class="about--content-image">
+                      <i class="fa-solid fa-life-ring"></i>
+                    </div>
+                    <!-- End about content image -->
+                    <h4>Support</h4>
+                    <p>
+                      Phasellus lobortis justo a magna facilisis, in commodo
+                      tellus rutrum. Sed vitae condimentum nulla.
+                    </p>
+                  </div>
+                  <!-- End wrapper about content -->
+                </div>
+                <!-- End col -->
+                <div
+                  class="col-2xl-4 col-xl-4 col-lg-4 col-md-12 -4 col-sm-12 col-12"
+                >
+                  <div class="wrapper--about-content">
+                    <div class="about--content-image">
+                      <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <!-- End about content image -->
+                    <h4>Cross Platform</h4>
+                    <p>
+                      Phasellus lobortis justo a magna facilisis, in commodo
+                      tellus rutrum. Sed vitae condimentum nulla.
+                    </p>
+                  </div>
+                  <!-- End wrapper about content -->
+                </div>
+                <!-- End col -->
+                <div
+                  class="col-2xl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12"
+                >
+                  <div class="wrapper--about-content">
+                    <div class="about--content-image">
+                      <span>
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                      </span>
+                    </div>
+                    <!-- End about content image -->
+                    <h4>Fast</h4>
+                    <p>
+                      Phasellus lobortis justo a magna facilisis, in commodo
+                      tellus rutrum. Sed vitae condimentum nulla.
+                    </p>
+                  </div>
+                  <!-- End wrapper about content -->
+                </div>
+                <!-- End col -->
+              </div>
+              <!-- End row -->
+            </div>
+            <!-- End main about -->
+            <div class="bottom--content">
+              <a href="#!" class="btn btn-primary"> Learn More </a>
+            </div>
+            <!-- End bottom content -->
+          </div>
+          <!-- End wrapper about -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- End about -->
+
+      <section class="features">
+        <div class="container">
+          <div class="wrapper--features">
+            <div class="heading--features">
+              <h3>Features</h3>
+              <div class="dashed-line"></div>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
+            </div>
+            <!-- End heading features -->
+            <div class="main--features">
+              <div class="row">
+                <div
+                  class="col-2xl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12"
+                >
+                  <div class="wrapper--features-content">
+                    <div class="list--features">
+                      <div class="features--content align-right">
+                        <h5>Fast Processing</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididugnt ut labore
+                        </p>
+                      </div>
+                      <!-- End features content -->
+                      <div class="features--icon">
+                        <span>
+                          <i class="fa-solid fa-bolt-lightning"></i>
+                        </span>
+                      </div>
+                      <!-- End features image -->
+                    </div>
+                    <!-- End list features -->
+                    <div class="list--features">
+                      <div class="features--content align-right">
+                        <h5>Low Power Consuming</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididugnt ut labore
+                        </p>
+                      </div>
+                      <!-- End features content -->
+                      <div class="features--icon">
+                        <span>
+                          <i class="fa-solid fa-battery-full"></i>
+                        </span>
+                      </div>
+                      <!-- End features image -->
+                    </div>
+                    <!-- End list features -->
+                    <div class="list--features">
+                      <div class="features--content align-right">
+                        <h5>Wifi Compatibility</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididugnt ut labore
+                        </p>
+                      </div>
+                      <!-- End features content -->
+                      <div class="features--icon">
+                        <span>
+                          <i class="fa-solid fa-wifi"></i>
+                        </span>
+                      </div>
+                      <!-- End features image -->
+                    </div>
+                    <!-- End list features -->
+                  </div>
+                  <!-- End wrapper features content-->
+                </div>
+                <!-- End col -->
+                <div class="col-2xl-4 col-xl-4 col-lg-4 col-md-4">
+                  <div class="wrapper--features-image">
+                    <img src="./src/images/iphone-screen.png" alt="phone" />
+                  </div>
+                  <!-- End wrapper features content -->
+                </div>
+                <!-- End cold -->
+                <div
+                  class="col-2xl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12"
+                >
+                  <div class="wrapper--features-content">
+                    <div class="list--features">
+                      <div class="features--icon">
+                        <span>
+                          <i class="fa-solid fa-check-double"></i>
+                        </span>
+                      </div>
+                      <!-- End features image -->
+                      <div class="features--content">
+                        <h5>Regular Updates</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididugnt ut labore
+                        </p>
+                      </div>
+                      <!-- End features content -->
+                    </div>
+                    <!-- End list features -->
+                    <div class="list--features">
+                      <div class="features--icon">
+                        <span>
+                          <i class="fa-solid fa-dollar-sign"></i>
+                        </span>
+                      </div>
+                      <!-- End features image -->
+                      <div class="features--content">
+                        <h5>Save Money</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididugnt ut labore
+                        </p>
+                      </div>
+                      <!-- End features content -->
+                    </div>
+                    <!-- End list features -->
+                    <div class="list--features">
+                      <div class="features--icon">
+                        <span>
+                          <i class="fa-solid fa-hard-drive"></i>
+                        </span>
+                      </div>
+                      <!-- End features image -->
+                      <div class="features--content">
+                        <h5>Unlimited Storage</h5>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididugnt ut labore
+                        </p>
+                      </div>
+                      <!-- End features content -->
+                    </div>
+                    <!-- End list features -->
+                  </div>
+                  <!-- End wrapper features content-->
+                </div>
+                <!-- End col -->
+              </div>
+              <!-- End row -->
+            </div>
+            <!-- End main features -->
+          </div>
+          <!-- End wrapper feature -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- End features -->
+
+      <section class="team">
+        <div class="container">
+          <div class="wrapper--team">
+            <div class="heading--team">
+              <h3>Our Team</h3>
+              <div class="dashed-line"></div>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
+            </div>
+            <!-- End heading team -->
+            <div class="main--team">
+              <div class="row">
+                <div
+                  class="col-2xl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12"
+                >
+                  <div class="wrapper--team-content">
+                    <div class="team--content-image">
+                      <img src="./src/images/user1.jpg" alt="user1" />
+                    </div>
+                    <!-- End team content image -->
+                    <h4>Nitu Singh</h4>
+                    <p>Marketing Specialist</p>
+                  </div>
+                  <!-- End wrapper team content -->
+                </div>
+                <!-- End col -->
+                <div
+                  class="col-2xl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12"
+                >
+                  <div class="wrapper--team-content">
+                    <div class="team--content-image">
+                      <img src="./src/images/user2.jpg" alt="user2" />
+                    </div>
+                    <!-- End team content image -->
+                    <h4>Yogesh Singh</h4>
+                    <p>CEO & Founder</p>
+                  </div>
+                  <!-- End wrapper team content -->
+                </div>
+                <!-- End col -->
+                <div
+                  class="col-2xl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12"
+                >
+                  <div class="wrapper--team-content">
+                    <div class="team--content-image">
+                      <span>
+                        <img src="./src/images/user3.jpg" alt="user3" />
+                      </span>
+                    </div>
+                    <!-- End team content image -->
+                    <h4>Nisha Sharma</h4>
+                    <p>Web Developer</p>
+                  </div>
+                  <!-- End wrapper team content -->
+                </div>
+                <!-- End col -->
+              </div>
+              <!-- End row -->
+            </div>
+            <!-- End heading team -->
+          </div>
+          <!-- End wrapper team -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- End team -->
+
+      <section class="testimonials">
+        <div class="container">
+          <div class="wrapper--testimonials">
+            <div class="heading--testimonials">
+              <h3>Testimonials</h3>
+              <div class="dashed-line"></div>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
+            </div>
+            <!-- End testimonials heading -->
+            <div class="main--testimonials">
+              <div class="splide" id="mySplide">
+                <div class="splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev">
+                    <span class="slide--arrow">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+                  </button>
+                  <button class="splide__arrow splide__arrow--next">
+                    <span class="slide--arrow">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="wrapper--testimonials-content">
+                        <div class="testimonials--image">
+                          <img src="./src/images/user1.jpg" alt="user1" />
+                        </div>
+                        <!-- End testimonials image -->
+                        <div class="testimonials--content">
+                          <span>
+                            John Michal <br />
+                            <span> Digital Designer </span>
+                          </span>
+                          <p>
+                            Consectetuer adipiscing elit, sed diam nonummy nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam
+                            eratvo lutpat.
+                          </p>
+                        </div>
+                        <!-- End  testimonials content -->
+                      </div>
+                      <!-- End wrapper testimonials content -->
+                    </li>
+                    <li class="splide__slide">
+                      <div class="wrapper--testimonials-content">
+                        <div class="testimonials--image">
+                          <img src="./src/images/user2.jpg" alt="user2" />
+                        </div>
+                        <!-- End testimonials image -->
+                        <div class="testimonials--content">
+                          <span>
+                            Gordon Shaw <br />
+                            <span> Blogger </span>
+                          </span>
+                          <p>
+                            Consectetuer adipiscing elit, sed diam nonummy nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam
+                            eratvo lutpat.
+                          </p>
+                        </div>
+                        <!-- End  testimonials content -->
+                      </div>
+                      <!-- End wrapper testimonials content -->
+                    </li>
+                    <li class="splide__slide">
+                      <div class="wrapper--testimonials-content">
+                        <div class="testimonials--image">
+                          <img src="./src/images/user3.jpg" alt="user3" />
+                        </div>
+                        <!-- End testimonials image -->
+                        <div class="testimonials--content">
+                          <span>
+                            John Michal <br />
+                            <span> Digital Designer </span>
+                          </span>
+                          <p>
+                            Consectetuer adipiscing elit, sed diam nonummy nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam
+                            eratvo lutpat.
+                          </p>
+                        </div>
+                        <!-- End  testimonials content -->
+                      </div>
+                      <!-- End wrapper testimonials content -->
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- End main testimonials -->
+          </div>
+          <!-- End wrapper testimonials -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- End testimonials -->
+
+      <section class="contact">
+        <div class="container">
+          <div class="wrapper--contact">
+            <div class="heading--contact">
+              <h3>Contact us</h3>
+              <div class="dashed-line"></div>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
+            </div>
+            <!-- End heading contact -->
+
+            <div class="main--contact">
+              <div class="row">
+                <div
+                  class="col-2xl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12"
+                >
+                  <form action="#!">
+                    <div class="wrapper--form">
+                      <div class="row">
+                        <div
+                          class="col-2xl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
+                        >
+                          <div class="wrapper--input">
+                            <input
+                              type="text"
+                              name="fullName"
+                              id="fullName"
+                              placeholder="Full Name"
+                            />
+                          </div>
+                          <!-- End wrapper input -->
+                        </div>
+                        <div
+                          class="col-2xl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
+                        >
+                          <div class="wrapper--input">
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              placeholder="Email"
+                            />
+                          </div>
+                          <!-- End wrapper input -->
+                        </div>
+                        <!-- End col -->
+                      </div>
+                      <!-- End row -->
+
+                      <div class="wrapper--input">
+                        <input
+                          type="text"
+                          name="subject"
+                          id="subject"
+                          placeholder="Subjetc"
+                        />
+                      </div>
+                      <!-- End wrapper input -->
+                      <!-- <textarea name="message" id="message" placeholder="hello">
+                      </textarea> -->
+                      <div class="wrapper--input">
+                        <textarea
+                          name="message"
+                          id="message1"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                      <!-- End wrapper input -->
+                    </div>
+                    <div class="contact--btn">
+                      <button class="btn btn-secondary">SUBMIT</button>
+                    </div>
+                  </form>
+                  <!-- End form -->
+                </div>
+                <!-- End col -->
+                <div
+                  class="col-2xl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12"
+                >
+                  <div class="wrapper--contact-info">
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                          Address
+                          <span> New Delhi, India </span>
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-mobile-button"></i>
+                        <span>
+                          Phone
+                          <a href="tel:+123456789"> 009900990099 </a>
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                          E-mail
+                          <a href="mailto:12345@gmail.com">
+                            yogeshsingh.now@gmail.com
+                          </a>
+                        </span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-clock"></i>
+                        <span>
+                          Working Hours
+                          <span> Mon-Fri 9.00 AM to 5.00PM. </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End col -->
+              </div>
+              <!-- End row -->
+            </div>
+            <!-- End main contact -->
+          </div>
+          <!-- End wrapper contact -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- End contact -->
+
+      <section class="download">
+        <div class="container">
+          <div class="wrapper--download">
+            <div class="heading--download">
+              <h3>Download Our App</h3>
+              <div class="dashed-line"></div>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
+            </div>
+            <!-- End heading download -->
+            <div class="bottom--download">
+              <a href="#!">
+                <img src="./src/images/appstore.png" alt="app store" />
+              </a>
+              <a href="#!">
+                <img src="./src/images/playstore.png" alt="play store" />
+              </a>
+            </div>
+            <!-- End bottom download -->
+          </div>
+          <!-- End wrapper download -->
+        </div>
+        <!-- End container -->
+      </section>
+      <!-- End section download -->
+    </main>
     <!-- End main -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <span>
+        2018 © Applight. Website Designed by
+        <a href="#!"> W3 Template </a>
+      </span>
+    </footer>
     <!-- End footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <script>
+      new Splide(".splide", {
+        type: "loop",
+        perPage: 1,
+        pagination: false,
+      }).mount();
+    </script>
+    <script src="./main.js"></script>
   </body>
 </html>

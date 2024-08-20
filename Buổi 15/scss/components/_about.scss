@@ -1,0 +1,73 @@
+@use "../partials/base";
+.about {
+  .wrapper--about {
+    padding: 6rem 0;
+    .heading--about {
+      @extend %heading--section;
+      p {
+        @extend %p-section;      }
+    }
+    .main--about {
+      .wrapper--about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .about--content-image {
+          width: 13.5rem;
+          height: 13.5rem;
+          background: base.$base-bgPrimary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          i {
+            font-size: 5.2rem;
+            color: #fff;
+          }
+        }
+        h4 {
+          margin-top: 3.2rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          @extend %p-content;
+          padding: 0 4rem;
+        }
+      }
+    }
+
+    .bottom--content {
+      text-align: center;
+    }
+  }
+}
+
+@include base.base-desktop {
+  .about {
+    .wrapper--about {
+      .main--about {
+        .wrapper--about-content {
+          p {
+            padding: 0 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include base.base-tablet {
+  .about {
+    .wrapper--about {
+      .main--about {
+        .wrapper--about-content {
+          p {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

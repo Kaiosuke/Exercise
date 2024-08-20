@@ -1,8 +1,8 @@
 @use "./variables";
 
 @mixin col-style($i) {
-  flex-basis: percentage($i / 12);
-  max-width: percentage($i / 12);
+  flex-basis: calc($i / 12 * 100%);
+  max-width: calc($i / 12 * 100%);
   padding: 0 calc(variables.$colPadding / 2);
   margin-bottom: calc(variables.$colPadding);
 }
@@ -22,6 +22,9 @@
 @mixin grid-system($breakPoints) {
   @each $name, $value in $breakPoints {
     @if $name == "min" {
+      .col-none {
+        display: none;
+      }
       @for $i from 1 through 12 {
         .col-#{$i} {
           @include col-style($i);
@@ -29,7 +32,12 @@
       }
     } @else {
       @include responsive((#{$name}: $value)) {
+        .col-#{$name}-none {
+          display: none;
+        }
         @for $i from 1 through 12 {
+          .col-#{$name}-none {
+          }
           .col-#{$name}-#{$i} {
             @include col-style($i);
           }

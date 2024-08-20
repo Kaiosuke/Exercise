@@ -1,0 +1,75 @@
+@use "../partials/base";
+
+.banner {
+  @extend %bg-section;
+  .wrapper--banner {
+    position: relative;
+    z-index: 99;
+    .banner--content {
+      margin-top: 5.2rem;
+      padding-right: 20rem;
+      h2 {
+        color: #fff;
+      }
+      h6 {
+        margin-top: 1rem;
+        color: #fff;
+        a {
+          border-bottom: 1px dotted #fff;
+        }
+      }
+      p {
+        color: #fff;
+        margin: 4rem 0;
+      }
+      .banner--btn {
+        display: flex;
+        gap: 1.6rem;
+        a {
+          img {
+            width: 15rem;
+            border-radius: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+  .wave {
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    z-index: 999;
+  }
+}
+
+@include base.base-large-desktop {
+  .banner {
+    .wrapper--banner {
+      .banner--content {
+        padding-right: 10rem;
+      }
+    }
+  }
+}
+
+@include base.base-desktop {
+  .banner {
+    .wrapper--banner {
+      .banner-image {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@include base.base-tablet {
+  .banner {
+    padding: 6rem 0;
+    .wrapper--banner {
+      .banner-image {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
