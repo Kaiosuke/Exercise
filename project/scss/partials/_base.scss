@@ -1,0 +1,132 @@
+@use "./reset";
+@use "./fonts";
+@forward "./fonts" as base-*;
+@use "./components";
+@forward "./components" as base-*;
+@use "./variables";
+@forward "./variables" as base-*;
+@use "./mixins";
+@forward "./mixins" as base-*;
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  font-size: 4.3rem;
+  font-weight: 800;
+  line-height: normal;
+  color: variables.$colorTextPrimary;
+}
+
+h3 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 4rem;
+  color: variables.$colorTextPrimary;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: normal;
+  color: variables.$colorTextPrimary;
+}
+
+h5 {
+  color: variables.$colorTextPrimary;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: variables.$colorTextPrimary;
+}
+
+@include mixins.large-desktop {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@include mixins.desktop {
+  .container {
+    padding: 0 2rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.2rem;
+  }
+  h5 {
+    font-size: 1.9rem;
+  }
+}
+
+@include mixins.tablet {
+  h2 {
+    font-size: 3.4rem;
+  }
+  h3 {
+    font-size: 2.8rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@include mixins.mobile {
+  h2 {
+    font-size: 3.2rem;
+  }
+  h3 {
+    font-size: 2.6rem;
+  }
+  h4 {
+    font-size: 1.9rem;
+  }
+  h5 {
+    font-size: 1.7rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}

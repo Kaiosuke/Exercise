@@ -1,0 +1,49 @@
+@use "./partials/base";
+
+//Import layout
+@use "./components/header";
+@use "./components/footer";
+@use "./components/banner";
+@use "./components/achievement";
+@use "./components/product";
+@use "./components/new";
+@use "./components/advantage";
+
+//Import page
+@use "./pages/home";
+
+@include base.base-desktop {
+  .header {
+    .container {
+      .wrapper--header {
+        #open--nav {
+          &:checked {
+            & ~ .header--link {
+              right: 0%;
+            }
+            & ~ .overlay {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.box {
+  width: 10rem;
+  background: red;
+  height: 1000rem !important;
+}
+
+.col--pd-top {
+  padding-top: 9.6rem !important;
+}
+
+@include base.base-desktop {
+  .col--pd-top {
+    padding-top: 0rem !important;
+  }
+}

@@ -1,0 +1,151 @@
+@use "../partials/base";
+.new {
+  margin-top: 12rem;
+  .container {
+    .wrapper--new {
+      .new--heading {
+        text-align: center;
+        p {
+          padding: 0 28rem;
+          margin-top: 2.3rem;
+          margin-bottom: 2.8rem;
+        }
+      }
+      .new--main {
+        .row {
+          .new--date {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1.6rem;
+            margin-bottom: 1.6rem;
+            font-size: 1.5rem;
+            span {
+              color: base.$base-colorPrimary;
+            }
+            .wrapper--date {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              color: #a3a3a3;
+              font-weight: 500;
+              span {
+                color: #a3a3a3;
+              }
+            }
+          }
+          .new--content {
+            p {
+              margin-top: 1.6rem;
+              color: base.$base-colorTextPrimary;
+              font-weight: 400;
+              line-height: 2rem;
+            }
+          }
+        }
+      }
+
+      .new--bottom {
+        margin-top: 8rem;
+      }
+    }
+  }
+}
+
+@include base.base-large-desktop {
+  .new {
+    .container {
+      .wrapper--new {
+        .new--heading {
+          p {
+            padding: 0 20rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include base.base-desktop {
+  .new {
+    .container {
+      .wrapper--new {
+        .new--heading {
+          p {
+            padding: 0 14rem;
+          }
+        }
+        .new--main {
+          .row {
+            .new--date {
+              font-size: 1.5rem;
+            }
+            .new--content {
+              p {
+                margin-top: 1.6rem;
+              }
+            }
+          }
+        }
+        .new--bottom {
+          margin-top: 6rem;
+        }
+      }
+    }
+  }
+}
+
+@include base.base-tablet {
+  .new {
+    .container {
+      .wrapper--new {
+        .new--heading {
+          p {
+            padding: 0 6rem;
+          }
+        }
+        .new--main {
+          .row {
+            .new--date {
+              font-size: 1.4rem;
+            }
+            .new--content {
+              p {
+                margin-top: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include base.base-mobile {
+  .new {
+    .container {
+      .wrapper--new {
+        .new--heading {
+          p {
+            padding: 0rem;
+          }
+        }
+        .new--main {
+          .row {
+            .new--date {
+              font-size: 1.3rem;
+            }
+            .new--content {
+              p {
+                margin-top: 1.4rem;
+              }
+            }
+          }
+        }
+        .new--bottom {
+          margin-top: 4rem;
+        }
+      }
+    }
+  }
+}
