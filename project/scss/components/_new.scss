@@ -13,6 +13,20 @@
       }
       .new--main {
         .row {
+          .new--image {
+            overflow: hidden;
+            display: block;
+            width: 100%;
+            height: 27rem;
+            border-radius: 1rem;
+            img {
+              transition: all base.$base-animatedFast ease-in-out;
+              height: 100%;
+              &:hover {
+                scale: 1.2;
+              }
+            }
+          }
           .new--date {
             display: flex;
             justify-content: space-between;
@@ -35,6 +49,14 @@
             }
           }
           .new--content {
+            a {
+              h5 {
+                transition: all base.$base-animatedFast ease-in-out;
+                &:hover {
+                  color: base.$base-colorPrimary;
+                }
+              }
+            }
             p {
               margin-top: 1.6rem;
               color: base.$base-colorTextPrimary;
@@ -77,6 +99,9 @@
         }
         .new--main {
           .row {
+            .new--image {
+              height: 25rem;
+            }
             .new--date {
               font-size: 1.5rem;
             }
@@ -106,6 +131,9 @@
         }
         .new--main {
           .row {
+            .new--image {
+              height: 20rem;
+            }
             .new--date {
               font-size: 1.4rem;
             }
@@ -132,6 +160,9 @@
         }
         .new--main {
           .row {
+            .new--image {
+              height: 25rem;
+            }
             .new--date {
               font-size: 1.3rem;
             }

@@ -18,6 +18,7 @@
           align-items: center;
           gap: 5rem;
           li {
+            transition: all base.$base-animatedFast;
             &:first-child {
               a {
                 border-bottom: 2px solid base.$base-colorPrimary;
@@ -26,15 +27,21 @@
             a {
               transition: all base.$base-animatedFast;
               display: inline-block;
-              padding: 4.5rem 0;
+              padding: 4.3rem 0 4.1rem 0;
               font-size: 1.7rem;
-
+              border-bottom: 2px solid transparent;
               &:hover {
                 color: base.$base-colorPrimary;
               }
             }
             &:first-child {
               color: base.$base-colorPrimary;
+            }
+
+            &:hover {
+              a {
+                border-bottom: 2px solid base.$base-colorPrimary;
+              }
             }
           }
         }

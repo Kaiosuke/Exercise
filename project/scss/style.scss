@@ -8,6 +8,8 @@
 @use "./components/product";
 @use "./components/new";
 @use "./components/advantage";
+@use "./components/feature";
+@use "./components/contact";
 
 //Import page
 @use "./pages/home";
@@ -46,4 +48,16 @@
   .col--pd-top {
     padding-top: 0rem !important;
   }
+}
+
+.pd--top {
+  padding-top: 2rem;
+}
+
+.overflow--hd {
+  overflow: hidden;
+}
+
+.blur {
+  filter: blur(6px);
 }
