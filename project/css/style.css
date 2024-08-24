@@ -655,11 +655,11 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -16%;
+  left: -17%;
   z-index: 9;
 }
 .banner .container .wrapper--banner .row .banner--image .wrapper--image img {
-  width: 68rem;
+  width: 72rem;
 }
 .banner .container .wrapper--banner .row .banner--image .banner--title {
   position: absolute;
@@ -670,7 +670,7 @@ p {
   transform-origin: top;
 }
 .banner .container .wrapper--banner .row .banner--image .banner--title span {
-  font-size: 16rem;
+  font-size: 17rem;
   font-weight: 800;
   color: rgba(33, 96, 0, 0.15);
 }
