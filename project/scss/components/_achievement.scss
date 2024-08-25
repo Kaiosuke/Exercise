@@ -186,6 +186,12 @@
                   padding: 0;
                 }
               }
+              &.scale {
+                &::before {
+                  box-shadow: none;
+                  transform: scaleY(1);
+                }
+              }
             }
           }
         }
@@ -242,6 +248,30 @@
         }
         .achievement--main {
           .row {
+            position: relative;
+            .achievement--mobile {
+              &:nth-child(2) {
+                position: absolute;
+                width: 100%;
+                top: 6rem;
+                transition: all base.$base-animatedFast;
+              }
+              &:nth-child(3) {
+                position: absolute;
+                width: 100%;
+                top: 11rem;
+                z-index: 99;
+                transition: all base.$base-animatedFast;
+              }
+              &.open {
+                &:nth-child(2) {
+                  top: 13rem;
+                }
+                &:nth-child(3) {
+                  top: 26rem;
+                }
+              }
+            }
             .achievement--content {
               .achievement--text {
                 span {
@@ -251,6 +281,9 @@
                   font-size: 1.5rem;
                 }
               }
+            }
+            .achievement--content {
+              height: 12rem;
             }
           }
         }

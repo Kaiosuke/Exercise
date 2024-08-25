@@ -17,3 +17,17 @@ const toggleBar = () => {
 };
 
 toggleBar();
+
+// open achievement
+const achievementRow = document.querySelector(".achievement--row");
+const achievementMb = document.querySelectorAll(".achievement--mobile");
+
+const openAchievement = () => {
+  achievementRow.addEventListener("click", () => {
+    achievementMb.forEach(function (value, key) {
+      value.classList.toggle("open");
+    });
+  });
+};
+
+openAchievement();
