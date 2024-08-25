@@ -35,23 +35,21 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            left: -17%;
+            left: -22%;
             z-index: 9;
+            display: flex;
+            align-items: center;
             img {
-              width: 72rem;
+              width: 70rem;
             }
-          }
-          .banner--title {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 32%;
-            rotate: 90deg;
-            transform-origin: top;
-            span {
-              font-size: 17rem;
-              font-weight: 800;
-              color: rgb(33, 96, 0, 0.15);
+            .banner--title {
+              span {
+                margin-left: -12rem;
+                writing-mode: vertical-lr;
+                font-size: 17rem;
+                font-weight: 800;
+                color: rgb(33, 96, 0, 0.15);
+              }
             }
           }
         }
@@ -118,18 +116,18 @@
             z-index: 9;
             width: auto;
             transform: none;
-            height: 50rem;
+            height: 60rem;
             .wrapper--image {
               left: 0;
               img {
                 width: 76%;
               }
-            }
-            .banner--title {
-              transform: none;
-              left: 70%;
-              span {
-                font-size: 12rem;
+              .banner--title {
+                transform: none;
+                left: 70%;
+                span {
+                  font-size: 15rem;
+                }
               }
             }
           }
@@ -151,23 +149,14 @@
           }
           .banner--image {
             position: relative;
-            height: 50rem;
+
             .wrapper--image {
               left: 0;
               img {
                 width: 100%;
               }
-            }
-            .banner--title {
-              position: absolute;
-              rotate: 0deg;
-              top: 25%;
-              left: 50%;
-              transform: translateX(-50%);
-              z-index: 99;
-              span {
-                color: rgb(33, 96, 0, 0.05);
-                font-size: 18rem;
+              .banner--title {
+                display: none;
               }
             }
           }
@@ -188,11 +177,13 @@
             }
           }
           .banner--image {
+            margin-top: 0;
+
             position: relative;
             height: 42rem;
-
             .banner--title {
               span {
+                writing-mode: vertical-lr;
                 font-size: 14rem;
               }
             }

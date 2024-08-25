@@ -655,21 +655,17 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -17%;
+  left: -22%;
   z-index: 9;
+  display: flex;
+  align-items: center;
 }
 .banner .container .wrapper--banner .row .banner--image .wrapper--image img {
-  width: 72rem;
+  width: 70rem;
 }
-.banner .container .wrapper--banner .row .banner--image .banner--title {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 32%;
-  rotate: 90deg;
-  transform-origin: top;
-}
-.banner .container .wrapper--banner .row .banner--image .banner--title span {
+.banner .container .wrapper--banner .row .banner--image .wrapper--image .banner--title span {
+  margin-left: -12rem;
+  writing-mode: vertical-lr;
   font-size: 17rem;
   font-weight: 800;
   color: rgba(33, 96, 0, 0.15);
@@ -713,7 +709,7 @@ p {
     z-index: 9;
     width: auto;
     transform: none;
-    height: 50rem;
+    height: 60rem;
   }
   .banner .container .wrapper--banner .row .banner--image .wrapper--image {
     left: 0;
@@ -721,12 +717,12 @@ p {
   .banner .container .wrapper--banner .row .banner--image .wrapper--image img {
     width: 76%;
   }
-  .banner .container .wrapper--banner .row .banner--image .banner--title {
+  .banner .container .wrapper--banner .row .banner--image .wrapper--image .banner--title {
     transform: none;
     left: 70%;
   }
-  .banner .container .wrapper--banner .row .banner--image .banner--title span {
-    font-size: 12rem;
+  .banner .container .wrapper--banner .row .banner--image .wrapper--image .banner--title span {
+    font-size: 15rem;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -735,7 +731,6 @@ p {
   }
   .banner .container .wrapper--banner .row .banner--image {
     position: relative;
-    height: 50rem;
   }
   .banner .container .wrapper--banner .row .banner--image .wrapper--image {
     left: 0;
@@ -743,17 +738,8 @@ p {
   .banner .container .wrapper--banner .row .banner--image .wrapper--image img {
     width: 100%;
   }
-  .banner .container .wrapper--banner .row .banner--image .banner--title {
-    position: absolute;
-    rotate: 0deg;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 99;
-  }
-  .banner .container .wrapper--banner .row .banner--image .banner--title span {
-    color: rgba(33, 96, 0, 0.05);
-    font-size: 18rem;
+  .banner .container .wrapper--banner .row .banner--image .wrapper--image .banner--title {
+    display: none;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -761,10 +747,12 @@ p {
     padding: 0;
   }
   .banner .container .wrapper--banner .row .banner--image {
+    margin-top: 0;
     position: relative;
     height: 42rem;
   }
   .banner .container .wrapper--banner .row .banner--image .banner--title span {
+    writing-mode: vertical-lr;
     font-size: 14rem;
   }
 }
