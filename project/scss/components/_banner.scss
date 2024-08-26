@@ -40,7 +40,7 @@
             display: flex;
             align-items: center;
             img {
-              width: 42vw;
+              width: 46vw;
             }
             .banner--title {
               span {
@@ -78,6 +78,11 @@
           .banner--image {
             .wrapper--image {
               left: -12%;
+              .banner--title {
+                span {
+                  font-size: 9vw;
+                }
+              }
             }
           }
         }

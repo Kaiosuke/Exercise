@@ -69,15 +69,13 @@
               flex-direction: column;
               gap: 0.6rem;
               li {
+                img {
+                  width: 2rem;
+                  height: 2rem;
+                }
                 display: flex;
                 align-items: center;
                 gap: 1rem;
-                &:last-child {
-                  align-items: flex-start;
-                  svg {
-                    width: 3rem;
-                  }
-                }
                 transition: all base.$base-animatedFast ease-in-out;
                 &:hover {
                   &:not(:last-child) {
@@ -183,11 +181,6 @@
               ul {
                 li {
                   font-size: 1.5rem;
-                  &:last-child {
-                    svg {
-                      width: 2rem;
-                    }
-                  }
                 }
               }
             }
@@ -240,11 +233,6 @@
               ul {
                 li {
                   font-size: 1.5rem;
-                  &:last-child {
-                    svg {
-                      width: 2rem;
-                    }
-                  }
                 }
               }
             }
